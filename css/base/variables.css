@@ -22,6 +22,7 @@
   --color-text-primary: #ffffff;
   --color-text-secondary: #94a3b8;
   --color-text-muted: #64748b;
+  --color-about-tag: #94a3b8;
 
   /* Bordas */
   --color-border: rgba(255, 255, 255, 0.08);
@@ -70,14 +71,19 @@
 
   /* Card de Serviço em Destaque */
   --color-card-featured-bg: var(--color-primary);
-  --color-card-featured-border: var(--color-primary);
+  --color-card-featured-border: var(--color-highlight);
   --color-card-featured-title: #ffffff;
   --color-card-featured-desc: rgba(255, 255, 255, 0.9);
   --color-card-featured-link: #ffffff;
   --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
   --color-card-featured-icon-color: #ffffff;
-  --shadow-card-featured: 0 12px 28px -4px rgba(99, 102, 241, 0.45);
-  --shadow-card-featured-hover: 0 18px 36px -4px rgba(99, 102, 241, 0.6);
+  --shadow-card-featured: 0 12px 28px -4px rgba(157, 125, 252, 0.35);
+  --shadow-card-featured-hover: 0 18px 36px -4px rgba(157, 125, 252, 0.5);
+
+  /* Ícones dos Cards de Serviço no Tema Escuro */
+  --color-card-icon-bg: rgba(157, 125, 252, 0.18);
+  --color-card-icon-hover-bg: rgba(157, 125, 252, 0.28);
+  --color-service-link-hover: #ffffff;
 
   /* Indicadores de Janela / Dots */
   --color-dot-red: #ef4444;
@@ -172,6 +178,7 @@
   --color-text-primary: #0f172a;
   --color-text-secondary: #475569;
   --color-text-muted: #64748b;
+  --color-about-tag: #64748b;
 
   /* Bordas */
   --color-border: rgba(0, 0, 0, 0.08);
@@ -228,6 +235,11 @@
   --color-card-featured-icon-color: #ffffff;
   --shadow-card-featured: 0 12px 28px -4px rgba(99, 102, 241, 0.35);
   --shadow-card-featured-hover: 0 18px 36px -4px rgba(99, 102, 241, 0.5);
+
+  /* Ícones dos Cards de Serviço no Tema Claro */
+  --color-card-icon-bg: rgba(109, 68, 248, 0.08);
+  --color-card-icon-hover-bg: rgba(109, 68, 248, 0.15);
+  --color-service-link-hover: var(--color-primary-hover);
 
   /* Indicadores de Janela / Dots */
   --color-dot-red: #ef4444;

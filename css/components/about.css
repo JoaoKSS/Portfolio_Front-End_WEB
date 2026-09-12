@@ -123,7 +123,7 @@
   font-size: var(--font-size-xs);
   font-weight: 700;
   letter-spacing: 0.14em;
-  color: var(--color-highlight);
+  color: var(--color-about-tag);
   text-transform: uppercase;
   margin-bottom: -0.25rem;
   transition: color var(--transition-normal);
