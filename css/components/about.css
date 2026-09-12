@@ -85,7 +85,7 @@
   border-radius: 8px;
   box-shadow: var(--shadow-md);
   font-family: var(--font-family-heading);
-  font-size: 0.85rem;
+  font-size: var(--font-size-sm);
   font-weight: 600;
   color: var(--color-badge-text);
   white-space: nowrap;
@@ -96,7 +96,7 @@
   .about__status-badge {
     left: 12px;
     bottom: 18px;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     padding: 0.5rem 0.85rem;
   }
 }
@@ -120,7 +120,7 @@
 
 .about__tag {
   font-family: var(--font-family-heading);
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   font-weight: 700;
   letter-spacing: 0.14em;
   color: var(--color-text-muted);
@@ -129,7 +129,7 @@
 }
 
 .about__title {
-  font-size: clamp(1.65rem, 3.8vw, 2.45rem);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
   font-weight: 800;
   color: var(--color-text-primary);
   line-height: 1.18;
@@ -152,7 +152,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
-  font-size: 0.975rem;
+  font-size: var(--font-size-base);
   color: var(--color-text-secondary);
   line-height: 1.75;
   transition: color var(--transition-normal);
@@ -169,12 +169,12 @@
 .about__tech-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.45rem 1.05rem;
+  padding: 0.5rem 1.15rem;
   background-color: var(--color-pill-bg);
   color: var(--color-pill-text);
   border-radius: 8px;
   font-family: var(--font-family-heading);
-  font-size: 0.85rem;
+  font-size: var(--font-size-sm);
   font-weight: 500;
   border: 1px solid var(--color-border-subtle);
   transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);

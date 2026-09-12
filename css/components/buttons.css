@@ -5,9 +5,9 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  padding: 0.85rem 1.6rem;
+  padding: 0.9rem 1.75rem;
   font-family: var(--font-family-heading);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 600;
   border-radius: var(--radius-md);
   text-decoration: none;
@@ -21,27 +21,33 @@
 }
 
 /* Botão Primário */
-.btn--primary {
+.btn--primary,
+.btn--primary:visited {
   background-color: var(--color-btn-primary-bg);
   color: var(--color-btn-primary-text);
   border: 1px solid transparent;
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+.btn--primary:active {
   background-color: var(--color-btn-primary-hover);
+  color: var(--color-btn-primary-text);
   transform: translateY(-2px);
 }
 
 /* Botão Secundário translúcido */
-.btn--secondary {
+.btn--secondary,
+.btn--secondary:visited {
   background-color: var(--color-btn-secondary-bg);
   color: var(--color-btn-secondary-text);
   border: 1px solid var(--color-btn-secondary-border);
   backdrop-filter: blur(8px);
 }
 
-.btn--secondary:hover {
+.btn--secondary:hover,
+.btn--secondary:active {
   background-color: var(--color-btn-secondary-hover-bg);
   border-color: var(--color-btn-secondary-hover-border);
+  color: var(--color-btn-secondary-text);
   transform: translateY(-2px);
 }

@@ -4,7 +4,7 @@
 
 body {
   font-family: var(--font-family-base);
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   font-weight: 400;
   color: var(--color-text-secondary);
   background-color: var(--color-bg-primary);
@@ -35,14 +35,14 @@ p {
 code,
 pre {
   font-family: var(--font-family-mono);
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
 }
 
 /* Tag de identificação de seção */
 .section-tag {
   display: inline-block;
   font-family: var(--font-family-heading);
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;

@@ -47,11 +47,16 @@
   --color-btn-secondary-hover-bg: rgba(255, 255, 255, 0.12);
   --color-btn-secondary-hover-border: rgba(255, 255, 255, 0.3);
 
-  /* Controles do Cabeçalho no Escuro */
+  /* Controles e Navegação do Cabeçalho no Escuro */
+  --color-nav-link: #94a3b8;
+  --color-nav-link-hover: #ffffff;
+  --color-nav-link-active: #9d7dfc;
   --color-theme-toggle-bg: #ffffff;
   --color-theme-toggle-color: #0f172a;
+  --color-theme-icon-sun: #f59e0b;
+  --color-theme-icon-moon: #6366f1;
   --color-nav-toggle-bg: rgba(255, 255, 255, 0.08);
-  --color-nav-toggle-border: var(--color-border);
+  --color-nav-toggle-border: rgba(255, 255, 255, 0.15);
   --color-nav-toggle-bar: #ffffff;
 
   /* Editor de Código no Escuro */
@@ -73,12 +78,18 @@
   --color-syntax-comment: #64748b;
 
   /* Hero: Overlays e Textos de Contraste */
+  --color-hero-bg: #0b0c12;
   --color-hero-overlay-1: rgba(15, 16, 23, 0.86);
   --color-hero-overlay-2: rgba(15, 16, 23, 0.74);
   --color-hero-overlay-3: rgba(15, 16, 23, 0.92);
   --color-hero-glow: rgba(109, 68, 248, 0.25);
+  --color-hero-tag: #9d7dfc;
   --color-hero-title: #ffffff;
+  --color-hero-highlight: #9d7dfc;
+  --color-hero-subtitle: #cbd5e1;
   --color-hero-metric: #ffffff;
+  --color-hero-metric-label: #94a3b8;
+  --color-hero-scroll: #94a3b8;
   --color-logo-text: #ffffff;
   --color-primary-glow: rgba(109, 68, 248, 0.3);
   --color-success-glow: rgba(34, 197, 94, 0.6);
@@ -92,6 +103,13 @@
   --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
   --font-family-heading: 'Plus Jakarta Sans', var(--font-family-base);
   --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Escala Tipográfica (~110% de escala) */
+  --font-size-xs: 0.85rem;
+  --font-size-sm: 0.925rem;
+  --font-size-base: 1.075rem;
+  --font-size-md: 1.15rem;
+  --font-size-lg: 1.35rem;
 
   /* Espaçamentos */
   --space-xs: 0.25rem; /* 4px */
@@ -160,18 +178,23 @@
   --color-btn-primary-bg: var(--color-primary);
   --color-btn-primary-text: #ffffff;
   --color-btn-primary-hover: var(--color-primary-hover);
-  --color-btn-secondary-bg: rgba(0, 0, 0, 0.04);
-  --color-btn-secondary-text: #0f172a;
-  --color-btn-secondary-border: rgba(0, 0, 0, 0.12);
-  --color-btn-secondary-hover-bg: rgba(0, 0, 0, 0.08);
-  --color-btn-secondary-hover-border: rgba(0, 0, 0, 0.22);
+  --color-btn-secondary-bg: rgba(255, 255, 255, 0.06);
+  --color-btn-secondary-text: #ffffff;
+  --color-btn-secondary-border: rgba(255, 255, 255, 0.15);
+  --color-btn-secondary-hover-bg: rgba(255, 255, 255, 0.12);
+  --color-btn-secondary-hover-border: rgba(255, 255, 255, 0.3);
 
-  /* Controles do Cabeçalho no Claro */
-  --color-theme-toggle-bg: #1e1b4b;
-  --color-theme-toggle-color: #f8fafc;
-  --color-nav-toggle-bg: rgba(15, 23, 42, 0.05);
-  --color-nav-toggle-border: rgba(0, 0, 0, 0.1);
-  --color-nav-toggle-bar: #0f172a;
+  /* Controles e Navegação do Cabeçalho no Claro */
+  --color-nav-link: #94a3b8;
+  --color-nav-link-hover: #ffffff;
+  --color-nav-link-active: #9d7dfc;
+  --color-theme-toggle-bg: #ffffff;
+  --color-theme-toggle-color: #0f172a;
+  --color-theme-icon-sun: #f59e0b;
+  --color-theme-icon-moon: #6366f1;
+  --color-nav-toggle-bg: rgba(255, 255, 255, 0.08);
+  --color-nav-toggle-border: rgba(255, 255, 255, 0.15);
+  --color-nav-toggle-bar: #ffffff;
 
   /* Editor de Código no Claro */
   --color-editor-bg: #171827;
@@ -192,12 +215,18 @@
   --color-syntax-comment: #64748b;
 
   /* Hero Overlays e Textos de Contraste */
+  --color-hero-bg: #0b0c12;
   --color-hero-overlay-1: rgba(15, 16, 23, 0.86);
   --color-hero-overlay-2: rgba(15, 16, 23, 0.74);
   --color-hero-overlay-3: rgba(15, 16, 23, 0.92);
   --color-hero-glow: rgba(109, 68, 248, 0.25);
+  --color-hero-tag: #9d7dfc;
   --color-hero-title: #ffffff;
+  --color-hero-highlight: #9d7dfc;
+  --color-hero-subtitle: #cbd5e1;
   --color-hero-metric: #ffffff;
+  --color-hero-metric-label: #94a3b8;
+  --color-hero-scroll: #94a3b8;
   --color-logo-text: #ffffff;
   --color-primary-glow: rgba(109, 68, 248, 0.2);
   --color-success-glow: rgba(34, 197, 94, 0.4);

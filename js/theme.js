@@ -24,6 +24,7 @@
     if (themeToggleBtn) {
       const isLight = theme === 'light';
       themeToggleBtn.setAttribute('aria-pressed', String(isLight));
+      themeToggleBtn.setAttribute('aria-label', isLight ? 'Mudar para tema escuro' : 'Mudar para tema claro');
     }
   }
 
