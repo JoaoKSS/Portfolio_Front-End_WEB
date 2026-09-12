@@ -1,52 +1,50 @@
 // Gerenciamento de Alternância de Tema (Dark/Light)
- 
+
 (function initTheme() {
   const THEME_STORAGE_KEY = 'portfolio_theme';
   const themeToggleBtn = document.getElementById('themeToggle');
 
-  // tema inicial
-  function getPreferredTheme() {
-    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-    if (savedTheme === 'light' || savedTheme === 'dark') {
-      return savedTheme;
-    }
-    // Verifica preferência do sistema operacional
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return 'light';
-    }
-    return 'dark';
+  function getActiveTheme() {
+    return document.documentElement.getAttribute('data-theme') || 'dark';
   }
 
-  // Aplica o tema ao documento
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
 
     if (themeToggleBtn) {
       const isLight = theme === 'light';
       themeToggleBtn.setAttribute('aria-pressed', String(isLight));
-      themeToggleBtn.setAttribute('aria-label', isLight ? 'Mudar para tema escuro' : 'Mudar para tema claro');
+      themeToggleBtn.setAttribute(
+        'aria-label',
+        isLight ? 'Mudar para tema escuro' : 'Mudar para tema claro'
+      );
     }
   }
 
-  // Aplicação inicial
-  const currentTheme = getPreferredTheme();
-  applyTheme(currentTheme);
+  // Sincroniza atributos ARIA com o tema já aplicado pelo script no <head>
+  applyTheme(getActiveTheme());
 
-  // Event Listener no botão de alternância
+  // Alternância manual pelo botão
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-      const activeTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
-
+      const newTheme = getActiveTheme() === 'dark' ? 'light' : 'dark';
       applyTheme(newTheme);
-      localStorage.setItem(THEME_STORAGE_KEY, newTheme);
+
+      try {
+        localStorage.setItem(THEME_STORAGE_KEY, newTheme);
+      } catch {
+      }
     });
   }
 
-  // alterações de preferência no sistema operacional 
+  // Sincronização automática com mudanças do sistema operacional
   if (window.matchMedia) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (!localStorage.getItem(THEME_STORAGE_KEY)) {
+      try {
+        if (!localStorage.getItem(THEME_STORAGE_KEY)) {
+          applyTheme(e.matches ? 'dark' : 'light');
+        }
+      } catch {
         applyTheme(e.matches ? 'dark' : 'light');
       }
     });

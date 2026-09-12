@@ -19,6 +19,18 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
     rel="stylesheet">
 
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('portfolio_theme');
+        const theme = (savedTheme === 'light' || savedTheme === 'dark')
+          ? savedTheme
+          : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- Folha de Estilos Principal -->
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -235,7 +247,7 @@
             </a>
           </article>
 
-          <!-- Card 2: Aplicações Mobile (Destaque / Featured) -->
+          <!-- Card 2: Aplicações Mobile -->
           <article class="service-card service-card--featured">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
@@ -316,7 +328,6 @@
   <script src="js/theme.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/smooth-scroll.js" defer></script>
-  <script src="js/main.js" defer></script>
 </body>
 
 </html>

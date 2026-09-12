@@ -51,7 +51,7 @@
   font-size: var(--font-size-xs);
   font-weight: 700;
   letter-spacing: 0.14em;
-  color: var(--color-hero-tag);
+  color: var(--color-accent-on-dark);
   text-transform: uppercase;
 }
 
@@ -60,19 +60,19 @@
   font-size: clamp(2.15rem, 5.8vw, 4.25rem);
   font-weight: 800;
   line-height: 1.08;
-  color: var(--color-hero-title);
+  color: var(--color-text-on-dark);
   letter-spacing: -0.03em;
   overflow-wrap: break-word;
   margin-top: var(--space-sm);
 }
 
 .hero__title .text-highlight {
-  color: var(--color-hero-highlight);
+  color: var(--color-accent-on-dark);
 }
 
 .hero__subtitle {
   font-size: clamp(0.95rem, 1.2vw, 1.05rem);
-  color: var(--color-hero-subtitle);
+  color: var(--color-text-on-dark-muted);
   max-width: 490px;
   line-height: 1.65;
   margin-top: var(--space-sm);
@@ -131,7 +131,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(1.75rem, 3.5vw, 2.1rem);
   font-weight: 800;
-  color: var(--color-hero-metric);
+  color: var(--color-text-on-dark);
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -147,7 +147,7 @@
 
 .hero__metric-label {
   font-size: 0.8rem;
-  color: var(--color-hero-metric-label);
+  color: var(--color-text-on-dark-subtle);
   line-height: 1.3;
 }
 
@@ -217,7 +217,7 @@
 }
 
 /* Syntax Highlighting */
-.syntax-keyword { color: var(--color-hero-highlight); font-weight: 600; }
+.syntax-keyword { color: var(--color-accent-on-dark); font-weight: 600; }
 .syntax-variable { color: var(--color-syntax-variable); }
 .syntax-property { color: var(--color-syntax-property); }
 .syntax-string { color: var(--color-syntax-string); }
@@ -232,7 +232,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-hero-scroll);
+  color: var(--color-text-on-dark-subtle);
   text-decoration: none;
   z-index: 10;
   animation: hero-scroll-down 2s infinite ease-in-out;
@@ -246,7 +246,7 @@
 }
 
 .hero__scroll:hover {
-  color: var(--color-hero-tag);
+  color: var(--color-accent-on-dark);
 }
 
 @keyframes hero-scroll-down {
