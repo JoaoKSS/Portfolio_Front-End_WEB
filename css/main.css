@@ -5,6 +5,11 @@
 @import url('./base/variables.css');
 @import url('./base/typography.css');
 
+/* Componentes */
+@import url('./components/buttons.css');
+@import url('./components/header.css');
+@import url('./components/hero.css');
+
 /* Utilitários Globais */
 .container {
   width: 100%;
@@ -24,3 +29,4 @@
   white-space: nowrap;
   border-width: 0;
 }
+
