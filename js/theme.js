@@ -1,0 +1,1 @@
+// Gerenciamento de alternância de tema (Dark/Light) com persistência em localStorage

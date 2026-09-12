@@ -1,0 +1,1 @@
+// Ponto de entrada JavaScript para inicialização dos módulos do portfólio

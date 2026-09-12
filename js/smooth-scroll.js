@@ -1,0 +1,1 @@
+// Gerenciamento de navegação suave respeitando prefers-reduced-motion
