@@ -13,6 +13,10 @@
 @import url('./components/services.css');
 
 /* Utilitários Globais */
+section[id] {
+  scroll-margin-top: calc(var(--header-height) + 0.5rem);
+}
+
 .container {
   width: 100%;
   max-width: var(--container-max-width);

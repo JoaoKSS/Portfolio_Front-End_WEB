@@ -1,51 +1,99 @@
-/* Configuração da paleta de cores Dark/Light, tipografia, espaçamentos e raios */
+/* Configuração da paleta de cores, tipografia, espaçamentos e raios */
 
 :root {
-  /* Cores Principais - Tema Escuro */
-  --color-bg-primary: #0f1017;
-  --color-bg-secondary: #171825;
-  --color-bg-tertiary: #1f2033;
-  --color-bg-glass: rgba(15, 16, 23, 0.85);
+  /* Superfícies e Fundos - Tema Escuro */
+  --color-bg-primary: #0b0c12;
+  --color-bg-secondary: #131420;
+  --color-bg-tertiary: #1b1c2e;
+  --color-bg-elevated: #23253b;
+  --color-bg-glass: rgba(11, 12, 18, 0.8);
 
-  /* Acentos Roxo/Violeta idênticos ao modelo */
+  /* Acentos Roxo/Violeta */
   --color-primary: #6d44f8;
   --color-primary-hover: #5b32e6;
-  --color-primary-light: rgba(109, 68, 248, 0.15);
+  --color-primary-light: rgba(109, 68, 248, 0.14);
   --color-highlight: #9d7dfc;
 
-  /* Cores de Apoio */
+  /* Status */
   --color-success: #10b981;
   --color-success-dot: #22c55e;
 
-  /* Tipografia e Contrastes */
+  /* Textos e Tipografia */
   --color-text-primary: #ffffff;
   --color-text-secondary: #94a3b8;
   --color-text-muted: #64748b;
-  --color-text-dark: #0f172a;
 
   /* Bordas */
-  --color-border: rgba(255, 255, 255, 0.1);
-  --color-border-subtle: rgba(255, 255, 255, 0.05);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-subtle: rgba(255, 255, 255, 0.04);
   --color-border-hover: rgba(157, 125, 252, 0.4);
 
-  /* Seção Clara */
-  --color-section-light-bg: #ffffff;
-  --color-section-light-text: #0f172a;
-  --color-section-light-muted: #475569;
-  --color-section-light-tag: #64748b;
-  --color-section-light-pill: #f1f5f9;
+  /* Componentes: Cards, Pílulas e Badges no Escuro */
+  --color-card-bg: #141524;
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-pill-bg: #1d1e30;
+  --color-pill-text: #cbd5e1;
+  --color-badge-bg: #ffffff;
+  --color-badge-border: #e2e8f0;
+  --color-badge-text: #1e293b;
+
+  /* Botões e Ações no Escuro */
+  --color-btn-primary-bg: var(--color-primary);
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-hover: var(--color-primary-hover);
+  --color-btn-secondary-bg: rgba(255, 255, 255, 0.06);
+  --color-btn-secondary-text: #ffffff;
+  --color-btn-secondary-border: rgba(255, 255, 255, 0.15);
+  --color-btn-secondary-hover-bg: rgba(255, 255, 255, 0.12);
+  --color-btn-secondary-hover-border: rgba(255, 255, 255, 0.3);
+
+  /* Controles do Cabeçalho no Escuro */
+  --color-theme-toggle-bg: #ffffff;
+  --color-theme-toggle-color: #0f172a;
+  --color-nav-toggle-bg: rgba(255, 255, 255, 0.08);
+  --color-nav-toggle-border: var(--color-border);
+  --color-nav-toggle-bar: #ffffff;
+
+  /* Editor de Código no Escuro */
+  --color-editor-bg: #171827;
+  --color-editor-border: rgba(255, 255, 255, 0.08);
+  --color-editor-header-bg: rgba(255, 255, 255, 0.02);
+  --color-editor-header-border: rgba(255, 255, 255, 0.05);
+  --color-editor-text: #e2e8f0;
+
+  /* Indicadores de Janela / Dots */
+  --color-dot-red: #ef4444;
+  --color-dot-yellow: #f59e0b;
+  --color-dot-green: #10b981;
+
+  /* Destaque de Sintaxe */
+  --color-syntax-variable: #f8fafc;
+  --color-syntax-property: #38bdf8;
+  --color-syntax-string: #34d399;
+  --color-syntax-comment: #64748b;
+
+  /* Hero: Overlays e Textos de Contraste */
+  --color-hero-overlay-1: rgba(15, 16, 23, 0.86);
+  --color-hero-overlay-2: rgba(15, 16, 23, 0.74);
+  --color-hero-overlay-3: rgba(15, 16, 23, 0.92);
+  --color-hero-glow: rgba(109, 68, 248, 0.25);
+  --color-hero-title: #ffffff;
+  --color-hero-metric: #ffffff;
+  --color-logo-text: #ffffff;
+  --color-primary-glow: rgba(109, 68, 248, 0.3);
+  --color-success-glow: rgba(34, 197, 94, 0.6);
 
   /* Sombras */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.5);
 
   /* Tipografia */
   --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
   --font-family-heading: 'Plus Jakarta Sans', var(--font-family-base);
   --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
-  /* Escala de Espaçamento */
+  /* Espaçamentos */
   --space-xs: 0.25rem; /* 4px */
   --space-sm: 0.5rem;  /* 8px */
   --space-md: 1rem;    /* 16px */
@@ -64,25 +112,98 @@
 
   /* Transições */
   --transition-fast: 150ms ease;
-  --transition-normal: 250ms ease;
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Layout */
   --container-max-width: 1180px;
-  --container-padding: 1.5rem;
-  --header-height: 5rem;
+  --container-padding: clamp(1rem, 3.5vw, 2rem);
+  --header-height: 4.75rem;
+  --z-header: 1000;
+  --z-drawer: 1100;
 }
 
 /* Tema Claro Global */
 [data-theme="light"] {
-  --color-bg-primary: #f8fafc;
-  --color-bg-secondary: #ffffff;
+  /* Superfícies & Fundos no Tema Claro */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
   --color-bg-tertiary: #f1f5f9;
-  --color-bg-glass: rgba(255, 255, 255, 0.9);
+  --color-bg-elevated: #e2e8f0;
+  --color-bg-glass: rgba(255, 255, 255, 0.88);
 
+  /* Acentos Roxo no Fundo Claro */
+  --color-primary: #6d44f8;
+  --color-primary-hover: #5b32e6;
+  --color-primary-light: rgba(109, 68, 248, 0.08);
+  --color-highlight: #6d44f8;
+
+  /* Textos - Alto Contraste no Claro */
   --color-text-primary: #0f172a;
   --color-text-secondary: #475569;
   --color-text-muted: #64748b;
 
+  /* Bordas */
   --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-subtle: rgba(0, 0, 0, 0.04);
   --color-border-hover: rgba(109, 68, 248, 0.35);
+
+  /* Componentes: Cards, Pílulas e Badges no Claro */
+  --color-card-bg: #ffffff;
+  --color-card-border: #e2e8f0;
+  --color-pill-bg: #f1f5f9;
+  --color-pill-text: #475569;
+  --color-badge-bg: #ffffff;
+  --color-badge-border: #e2e8f0;
+  --color-badge-text: #1e293b;
+
+  /* Botões e Ações no Claro */
+  --color-btn-primary-bg: var(--color-primary);
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-hover: var(--color-primary-hover);
+  --color-btn-secondary-bg: rgba(0, 0, 0, 0.04);
+  --color-btn-secondary-text: #0f172a;
+  --color-btn-secondary-border: rgba(0, 0, 0, 0.12);
+  --color-btn-secondary-hover-bg: rgba(0, 0, 0, 0.08);
+  --color-btn-secondary-hover-border: rgba(0, 0, 0, 0.22);
+
+  /* Controles do Cabeçalho no Claro */
+  --color-theme-toggle-bg: #1e1b4b;
+  --color-theme-toggle-color: #f8fafc;
+  --color-nav-toggle-bg: rgba(15, 23, 42, 0.05);
+  --color-nav-toggle-border: rgba(0, 0, 0, 0.1);
+  --color-nav-toggle-bar: #0f172a;
+
+  /* Editor de Código no Claro */
+  --color-editor-bg: #171827;
+  --color-editor-border: rgba(255, 255, 255, 0.08);
+  --color-editor-header-bg: rgba(255, 255, 255, 0.02);
+  --color-editor-header-border: rgba(255, 255, 255, 0.05);
+  --color-editor-text: #e2e8f0;
+
+  /* Indicadores de Janela / Dots */
+  --color-dot-red: #ef4444;
+  --color-dot-yellow: #f59e0b;
+  --color-dot-green: #10b981;
+
+  /* Destaque de Sintaxe (Syntax Highlighting) */
+  --color-syntax-variable: #f8fafc;
+  --color-syntax-property: #38bdf8;
+  --color-syntax-string: #34d399;
+  --color-syntax-comment: #64748b;
+
+  /* Hero Overlays e Textos de Contraste */
+  --color-hero-overlay-1: rgba(15, 16, 23, 0.86);
+  --color-hero-overlay-2: rgba(15, 16, 23, 0.74);
+  --color-hero-overlay-3: rgba(15, 16, 23, 0.92);
+  --color-hero-glow: rgba(109, 68, 248, 0.25);
+  --color-hero-title: #ffffff;
+  --color-hero-metric: #ffffff;
+  --color-logo-text: #ffffff;
+  --color-primary-glow: rgba(109, 68, 248, 0.2);
+  --color-success-glow: rgba(34, 197, 94, 0.4);
+
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
