@@ -65,6 +65,19 @@
   --color-editor-header-bg: rgba(255, 255, 255, 0.02);
   --color-editor-header-border: rgba(255, 255, 255, 0.05);
   --color-editor-text: #e2e8f0;
+  --color-editor-shadow: rgba(0, 0, 0, 0.4);
+  --color-editor-glow: rgba(109, 68, 248, 0.2);
+
+  /* Card de Serviço em Destaque */
+  --color-card-featured-bg: var(--color-primary);
+  --color-card-featured-border: var(--color-primary);
+  --color-card-featured-title: #ffffff;
+  --color-card-featured-desc: rgba(255, 255, 255, 0.9);
+  --color-card-featured-link: #ffffff;
+  --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
+  --color-card-featured-icon-color: #ffffff;
+  --shadow-card-featured: 0 12px 28px -4px rgba(99, 102, 241, 0.45);
+  --shadow-card-featured-hover: 0 18px 36px -4px rgba(99, 102, 241, 0.6);
 
   /* Indicadores de Janela / Dots */
   --color-dot-red: #ef4444;
@@ -104,12 +117,12 @@
   --font-family-heading: 'Plus Jakarta Sans', var(--font-family-base);
   --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
-  /* Escala Tipográfica (~110% de escala) */
-  --font-size-xs: 0.85rem;
-  --font-size-sm: 0.925rem;
-  --font-size-base: 1.075rem;
-  --font-size-md: 1.15rem;
-  --font-size-lg: 1.35rem;
+  /* Escala Tipográfica */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
 
   /* Espaçamentos */
   --space-xs: 0.25rem; /* 4px */
@@ -202,6 +215,19 @@
   --color-editor-header-bg: rgba(255, 255, 255, 0.02);
   --color-editor-header-border: rgba(255, 255, 255, 0.05);
   --color-editor-text: #e2e8f0;
+  --color-editor-shadow: rgba(0, 0, 0, 0.3);
+  --color-editor-glow: rgba(109, 68, 248, 0.2);
+
+  /* Card de Serviço em Destaque no Tema Claro */
+  --color-card-featured-bg: var(--color-primary);
+  --color-card-featured-border: var(--color-primary);
+  --color-card-featured-title: #ffffff;
+  --color-card-featured-desc: rgba(255, 255, 255, 0.9);
+  --color-card-featured-link: #ffffff;
+  --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
+  --color-card-featured-icon-color: #ffffff;
+  --shadow-card-featured: 0 12px 28px -4px rgba(99, 102, 241, 0.35);
+  --shadow-card-featured-hover: 0 18px 36px -4px rgba(99, 102, 241, 0.5);
 
   /* Indicadores de Janela / Dots */
   --color-dot-red: #ef4444;

@@ -96,7 +96,7 @@
   .about__status-badge {
     left: 12px;
     bottom: 18px;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     padding: 0.5rem 0.85rem;
   }
 }
@@ -123,9 +123,10 @@
   font-size: var(--font-size-xs);
   font-weight: 700;
   letter-spacing: 0.14em;
-  color: var(--color-text-muted);
+  color: var(--color-highlight);
   text-transform: uppercase;
   margin-bottom: -0.25rem;
+  transition: color var(--transition-normal);
 }
 
 .about__title {
@@ -155,6 +156,9 @@
   font-size: var(--font-size-base);
   color: var(--color-text-secondary);
   line-height: 1.75;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
   transition: color var(--transition-normal);
 }
 
@@ -169,7 +173,7 @@
 .about__tech-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem 1.15rem;
+  padding: 0.45rem 1.05rem;
   background-color: var(--color-pill-bg);
   color: var(--color-pill-text);
   border-radius: 8px;

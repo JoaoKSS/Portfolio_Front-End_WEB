@@ -5,9 +5,9 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  padding: 0.9rem 1.75rem;
+  padding: 0.85rem 1.6rem;
   font-family: var(--font-family-heading);
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 600;
   border-radius: var(--radius-md);
   text-decoration: none;
@@ -18,6 +18,20 @@
 .btn:focus-visible {
   outline: 2px solid var(--color-highlight);
   outline-offset: 2px;
+}
+
+.btn svg,
+.btn__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.btn:hover svg,
+.btn:hover .btn__icon {
+  transform: translate(2px, -2px);
 }
 
 /* Botão Primário */

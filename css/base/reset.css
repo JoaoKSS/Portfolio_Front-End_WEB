@@ -12,6 +12,7 @@ html {
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height, 4.75rem) + 0.5rem);
   overflow-x: clip;
 }
 

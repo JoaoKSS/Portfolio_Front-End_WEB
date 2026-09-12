@@ -61,7 +61,7 @@
 
 .header__logo-text {
   font-family: var(--font-family-heading);
-  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: 800;
   letter-spacing: -0.025em;
   color: var(--color-logo-text);
@@ -82,7 +82,7 @@
 }
 
 .header__menu-link {
-  font-size: 1.025rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-nav-link);
   text-decoration: none;
@@ -142,24 +142,27 @@
   outline-offset: 2px;
 }
 
-.theme-toggle svg {
+.theme-toggle svg,
+.theme-toggle img,
+.theme-toggle__icon {
+  position: absolute;
   width: 1.15rem;
   height: 1.15rem;
   display: block;
+  user-select: none;
+  -webkit-user-drag: none;
   transition: transform var(--transition-normal), opacity var(--transition-normal);
 }
 
 /* Ícone do Sol */
 .theme-toggle .lucide-sun {
-  color: var(--color-theme-icon-sun);
   transform: rotate(0deg) scale(1);
   opacity: 1;
+  pointer-events: auto;
 }
 
 /* Ícone da Lua */
 .theme-toggle .lucide-moon {
-  position: absolute;
-  color: var(--color-theme-icon-moon);
   transform: rotate(90deg) scale(0);
   opacity: 0;
   pointer-events: none;
@@ -167,14 +170,12 @@
 
 /* Transição ao alternar para o Tema Claro */
 [data-theme="light"] .theme-toggle .lucide-sun {
-  position: absolute;
   transform: rotate(-90deg) scale(0);
   opacity: 0;
   pointer-events: none;
 }
 
 [data-theme="light"] .theme-toggle .lucide-moon {
-  position: static;
   transform: rotate(0deg) scale(1);
   opacity: 1;
   pointer-events: auto;
