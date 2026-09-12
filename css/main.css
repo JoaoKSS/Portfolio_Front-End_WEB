@@ -10,6 +10,7 @@
 @import url('./components/header.css');
 @import url('./components/hero.css');
 @import url('./components/about.css');
+@import url('./components/services.css');
 
 /* Utilitários Globais */
 .container {
@@ -30,4 +31,3 @@
   white-space: nowrap;
   border-width: 0;
 }
-

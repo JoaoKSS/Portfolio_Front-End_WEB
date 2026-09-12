@@ -4,7 +4,7 @@
 
 body {
   font-family: var(--font-family-base);
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   font-weight: 400;
   color: var(--color-text-secondary);
   background-color: var(--color-bg-primary);
@@ -19,23 +19,13 @@ h5,
 h6 {
   font-family: var(--font-family-heading);
   color: var(--color-text-primary);
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.15;
 }
 
-h1 {
-  font-size: clamp(2.25rem, 5vw + 1rem, 3.75rem); /* Escala fluida */
-  letter-spacing: -0.025em;
-}
-
-h2 {
-  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
-  letter-spacing: -0.02em;
-}
-
-h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
+/* Destaque de cor roxo/lavanda no texto */
+.text-highlight {
+  color: var(--color-highlight);
 }
 
 p {
@@ -48,19 +38,17 @@ pre {
   font-size: 0.875rem;
 }
 
-/* Tag /Badge de identificação de seção */
+/* Tag de identificação de seção */
 .section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xs);
-  padding: 0.35rem 0.85rem;
-  font-family: var(--font-family-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
+  display: inline-block;
+  font-family: var(--font-family-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-primary);
-  background-color: var(--color-primary-light);
-  border: 1px solid var(--color-border-hover);
-  border-radius: var(--radius-full);
+  letter-spacing: 0.12em;
+  color: var(--color-highlight);
+}
+
+.section-tag--muted {
+  color: var(--color-section-light-tag);
 }

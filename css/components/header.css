@@ -1,57 +1,65 @@
 /* Estilos do Cabeçalho e Navegação (BEM) */
 
 .header {
-  position: sticky;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: var(--color-bg-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--color-border);
+  background: transparent;
   z-index: 1000;
-  transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
 .header__container {
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  gap: var(--space-xl);
 }
 
+/* Logotipo com caixa roxa símbolo </> */
 .header__logo {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-xs);
-  font-family: var(--font-family-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-text-primary);
+  gap: 0.85rem;
   text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.header__logo:hover {
-  color: var(--color-primary);
 }
 
 .header__logo-icon {
-  font-family: var(--font-family-mono);
-  font-weight: 700;
-  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #6d44f8;
+  color: #ffffff;
+  border-radius: 14px;
+  font-family: var(--font-family-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  box-shadow: 0 4px 12px rgba(109, 68, 248, 0.3);
 }
 
+.header__logo-text {
+  font-family: var(--font-family-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+/* Menu Centralizado */
 .header__nav {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .header__menu {
   display: flex;
   align-items: center;
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
 }
 
 .header__menu-link {
@@ -59,66 +67,56 @@
   font-weight: 500;
   color: var(--color-text-secondary);
   text-decoration: none;
-  position: relative;
-  padding-block: var(--space-xs);
   transition: color var(--transition-fast);
 }
 
 .header__menu-link:hover,
 .header__menu-link--active {
-  color: var(--color-text-primary);
-}
-
-.header__menu-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--color-primary);
-  transition: width var(--transition-normal);
-}
-
-.header__menu-link:hover::after,
-.header__menu-link--active::after {
-  width: 100%;
+  color: var(--color-highlight);
 }
 
 .header__menu-link:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--color-highlight);
   outline-offset: 4px;
   border-radius: var(--radius-sm);
 }
 
 /* Botão de Alternância de Tema */
+.header__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: var(--radius-full);
-  background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  color: var(--color-text-primary);
+  background-color: #ffffff;
+  border: none;
+  color: #0f172a;
   cursor: pointer;
-  transition: all var(--transition-normal);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
 }
 
 .theme-toggle:hover {
-  border-color: var(--color-border-hover);
-  background-color: var(--color-primary-light);
-  transform: rotate(15deg);
+  transform: scale(1.05);
 }
 
 .theme-toggle:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--color-highlight);
   outline-offset: 2px;
 }
 
 .theme-toggle__icon {
   font-size: 1.1rem;
   line-height: 1;
-  user-select: none;
+}
+
+[data-theme="light"] .theme-toggle {
+  background-color: #1e1b4b;
+  color: #ffffff;
 }
