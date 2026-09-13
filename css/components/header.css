@@ -30,7 +30,7 @@
 .header__logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-sm);
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -43,7 +43,7 @@
   height: 2.35rem;
   background-color: var(--color-primary);
   color: var(--color-btn-primary-text);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   box-shadow: 0 4px 12px var(--color-primary-glow);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
@@ -82,7 +82,7 @@
 }
 
 .header__menu-link {
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   font-weight: 500;
   color: var(--color-nav-link);
   text-decoration: none;
@@ -108,7 +108,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.75rem;
+  gap: var(--space-sm);
 }
 
 /* Botão de Alternância de Tema */
@@ -289,13 +289,13 @@
     border-radius: var(--radius-md);
     background-color: transparent;
     color: var(--color-text-primary);
-    transition: background-color var(--transition-fast), color var(--transition-fast), padding var(--transition-fast);
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
   }
 
   .header__menu-link:hover,
   .header__menu-link--active {
     background-color: var(--color-primary-light);
     color: var(--color-highlight);
-    padding-left: 1.5rem;
+    transform: translateX(4px);
   }
 }

@@ -46,11 +46,11 @@
   --color-btn-primary-bg: var(--color-primary);
   --color-btn-primary-text: #ffffff;
   --color-btn-primary-hover: var(--color-primary-hover);
-  --color-btn-secondary-bg: rgba(255, 255, 255, 0.06);
+  --color-btn-secondary-bg: rgba(255, 255, 255, 0.08);
   --color-btn-secondary-text: #ffffff;
-  --color-btn-secondary-border: rgba(255, 255, 255, 0.15);
-  --color-btn-secondary-hover-bg: rgba(255, 255, 255, 0.12);
-  --color-btn-secondary-hover-border: rgba(255, 255, 255, 0.3);
+  --color-btn-secondary-border: rgba(255, 255, 255, 0.2);
+  --color-btn-secondary-hover-bg: rgba(255, 255, 255, 0.16);
+  --color-btn-secondary-hover-border: rgba(255, 255, 255, 0.4);
 
   /* Controles e Navegação do Cabeçalho no Escuro */
   --color-nav-link: #94a3b8;
@@ -80,6 +80,7 @@
   --color-card-featured-desc: rgba(255, 255, 255, 0.9);
   --color-card-featured-link: #ffffff;
   --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
+  --color-card-featured-icon-hover-bg: rgba(255, 255, 255, 0.28);
   --color-card-featured-icon-color: #ffffff;
   --shadow-card-featured: 0 12px 28px -4px rgba(157, 125, 252, 0.35);
   --shadow-card-featured-hover: 0 18px 36px -4px rgba(157, 125, 252, 0.5);
@@ -201,6 +202,7 @@
   --color-card-featured-desc: rgba(255, 255, 255, 0.9);
   --color-card-featured-link: #ffffff;
   --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
+  --color-card-featured-icon-hover-bg: rgba(255, 255, 255, 0.28);
   --color-card-featured-icon-color: #ffffff;
   --shadow-card-featured: 0 12px 28px -4px rgba(99, 102, 241, 0.35);
   --shadow-card-featured-hover: 0 18px 36px -4px rgba(99, 102, 241, 0.5);

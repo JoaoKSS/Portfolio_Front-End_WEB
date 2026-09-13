@@ -1,4 +1,4 @@
-/* Ponto de entrada que centraliza as regras base e os futuros componentes */
+/* Ponto de entrada que centraliza as regras base e os componentes */
 
 /* Base */
 @import url('./base/reset.css');
@@ -11,12 +11,18 @@
 @import url('./components/hero.css');
 @import url('./components/about.css');
 @import url('./components/services.css');
+@import url('./components/portfolio.css');
 
-/* Utilitários Globais */
-section[id] {
+/* Utilitários Globais de Âncoras */
+section[id]:not(#hero) {
   scroll-margin-top: calc(var(--header-height) + 0.5rem);
 }
 
+#hero {
+  scroll-margin-top: 0;
+}
+
+/* Container Responsivo Central */
 .container {
   width: 100%;
   max-width: var(--container-max-width);
@@ -24,6 +30,7 @@ section[id] {
   padding-inline: var(--container-padding);
 }
 
+/* Utilitário de Acessibilidade */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -32,6 +39,7 @@ section[id] {
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border-width: 0;
 }

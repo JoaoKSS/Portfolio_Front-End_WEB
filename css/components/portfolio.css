@@ -1,0 +1,273 @@
+/* Estilos da Seção Portfólio (BEM) */
+
+.portfolio {
+  padding-block: clamp(4rem, 7vw, var(--space-4xl));
+  position: relative;
+  background-color: var(--color-bg-primary);
+  transition: background-color var(--transition-normal);
+}
+
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho da Seção */
+.portfolio__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-bottom: clamp(2.5rem, 5vw, var(--space-3xl));
+}
+
+.portfolio__header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  max-width: 620px;
+}
+
+.portfolio__tag {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-highlight);
+  text-transform: uppercase;
+  transition: color var(--transition-normal);
+}
+
+.portfolio__title {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.15rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.12;
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  transition: color var(--transition-normal);
+}
+
+.portfolio__subtitle {
+  font-size: clamp(0.925rem, 1.2vw, 1rem);
+  color: var(--color-text-secondary);
+  max-width: 38ch;
+  line-height: 1.6;
+  text-wrap: pretty;
+  margin-bottom: var(--space-xs);
+  transition: color var(--transition-normal);
+}
+
+/* Grid Assimétrico: 1 Coluna Grande à Esquerda e 2 Empilhados à Direita */
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 3vw, var(--space-xl));
+  align-items: stretch;
+}
+
+@media (min-width: 992px) {
+  .portfolio__grid {
+    grid-template-columns: 1.18fr 0.82fr;
+  }
+}
+
+.portfolio__column-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, var(--space-xl));
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .portfolio__column-stacked .project-card {
+    flex: 1;
+  }
+}
+
+/* Estrutura dos Cards */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal), background-color var(--transition-normal);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-border-hover);
+}
+
+.project-card:focus-within {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Link Abrangente do Card */
+.project-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+  text-decoration: none;
+  color: inherit;
+  border-radius: inherit;
+}
+
+.project-card__link:focus-visible {
+  outline: 2px solid var(--color-highlight);
+  outline-offset: 4px;
+}
+
+/* Card Destaque (Esquerda) */
+.project-card--featured {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Moldura e Imagem do Mockup */
+.project-card__image-container {
+  padding: clamp(0.85rem, 1.8vw, 1.25rem);
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.project-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.project-card--featured .project-card__image-wrapper {
+  aspect-ratio: 16 / 10;
+  min-height: 280px;
+}
+
+.project-card:not(.project-card--featured) .project-card__image-wrapper {
+  aspect-ratio: 16 / 9;
+  min-height: 180px;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-card__image {
+  transform: scale(1.035);
+}
+
+/* Corpo do Card (Textos e Ação) */
+.project-card__body {
+  padding: clamp(1.2rem, 2.2vw, 1.6rem);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.project-card__category {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--color-highlight);
+  text-transform: uppercase;
+  transition: color var(--transition-normal);
+}
+
+.project-card__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  flex-shrink: 0;
+}
+
+/* Ícone da Ação: Padrão profissional com CSS Mask referenciando o arquivo de ícone */
+.project-card__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+  background-color: currentColor;
+  -webkit-mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
+  pointer-events: none;
+  transition: transform var(--transition-fast);
+}
+
+/* Hover do Botão de Ação */
+.project-card:hover .project-card__action {
+  background-color: var(--color-primary-light);
+  color: var(--color-highlight);
+  border-color: var(--color-highlight);
+  transform: translate(2px, -2px);
+}
+
+.project-card__title {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  transition: color var(--transition-normal);
+}
+
+.project-card__description {
+  font-size: clamp(0.85rem, 1vw, 0.925rem);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-top: var(--space-xs);
+  text-wrap: pretty;
+  transition: color var(--transition-normal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card__image,
+  .project-card__action {
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .project-card:hover .project-card__image {
+    transform: none;
+  }
+
+  .project-card:hover .project-card__action {
+    transform: none;
+  }
+}

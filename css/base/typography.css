@@ -1,7 +1,5 @@
 /* Tipografia Base & Escala */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
-
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
@@ -11,6 +9,13 @@ body {
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
+/* Seleção de Texto */
+::selection {
+  background-color: var(--color-primary-light);
+  color: var(--color-highlight);
+}
+
+/* Títulos */
 h1,
 h2,
 h3,
@@ -21,21 +26,22 @@ h6 {
   color: var(--color-text-primary);
   font-weight: 800;
   line-height: 1.15;
-}
-
-/* Destaque de cor roxo/lavanda no texto */
-.text-highlight {
-  color: var(--color-highlight);
+  letter-spacing: -0.02em;
 }
 
 p {
   line-height: 1.7;
+  text-wrap: pretty;
 }
 
 code,
 pre {
   font-family: var(--font-family-mono);
   font-size: var(--font-size-sm);
+}
+
+.text-highlight {
+  color: var(--color-highlight);
 }
 
 /* Tag de identificação de seção */
