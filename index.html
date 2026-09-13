@@ -20,14 +20,14 @@
     rel="stylesheet">
 
   <script>
-    (function() {
+    (function () {
       try {
         const savedTheme = localStorage.getItem('portfolio_theme');
         const theme = (savedTheme === 'light' || savedTheme === 'dark')
           ? savedTheme
           : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
         document.documentElement.setAttribute('data-theme', theme);
-      } catch (e) {}
+      } catch (e) { }
     })();
   </script>
 
@@ -42,10 +42,11 @@
     <div class="container header__container">
       <a href="#hero" class="header__logo" aria-label="Página inicial - João Kennedy">
         <span class="header__logo-icon" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m18 16 4-4-4-4"/>
-            <path d="m6 8-4 4 4 4"/>
-            <path d="m14.5 4-5 16"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 16 4-4-4-4" />
+            <path d="m6 8-4 4 4 4" />
+            <path d="m14.5 4-5 16" />
           </svg>
         </span>
         <span class="header__logo-text">João Kennedy</span>
@@ -64,14 +65,16 @@
         <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar entre tema claro e escuro"
           aria-pressed="false">
           <!-- lua -->
-          <img src="assets/icons/moon.svg" width="20" height="20" class="theme-toggle__icon lucide-moon" alt="" aria-hidden="true" draggable="false">
+          <img src="assets/icons/moon.svg" width="20" height="20" class="theme-toggle__icon lucide-moon" alt=""
+            aria-hidden="true" draggable="false">
           <!-- sol -->
-          <img src="assets/icons/sun.svg" width="20" height="20" class="theme-toggle__icon lucide-sun" alt="" aria-hidden="true" draggable="false">
+          <img src="assets/icons/sun.svg" width="20" height="20" class="theme-toggle__icon lucide-sun" alt=""
+            aria-hidden="true" draggable="false">
         </button>
 
         <!-- Botão Menu Mobile -->
-        <button type="button" class="header__toggle" id="menuToggle" aria-controls="primaryNav"
-          aria-expanded="false" aria-label="Abrir menu de navegação">
+        <button type="button" class="header__toggle" id="menuToggle" aria-controls="primaryNav" aria-expanded="false"
+          aria-label="Abrir menu de navegação">
           <span class="header__toggle-bar" aria-hidden="true"></span>
           <span class="header__toggle-bar" aria-hidden="true"></span>
           <span class="header__toggle-bar" aria-hidden="true"></span>
@@ -104,9 +107,11 @@
           <div class="hero__actions">
             <a href="#projetos" class="btn btn--primary">
               <span>Conheça meu trabalho</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__icon lucide lucide-move-up-right" aria-hidden="true">
-                <path d="M13 5H19V11"/>
-                <path d="M19 5L5 19"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="btn__icon lucide lucide-move-up-right" aria-hidden="true">
+                <path d="M13 5H19V11" />
+                <path d="M19 5L5 19" />
               </svg>
             </a>
             <a href="#contato" class="btn btn--secondary">Vamos conversar</a>
@@ -151,9 +156,11 @@
 
       <!-- Seta indicadora de rolagem -->
       <a href="#sobre" class="hero__scroll" aria-label="Rolar para a seção Sobre Mim">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true">
-          <path d="M12 5v14"/>
-          <path d="m19 12-7 7-7-7"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-arrow-down" aria-hidden="true">
+          <path d="M12 5v14" />
+          <path d="m19 12-7 7-7-7" />
         </svg>
       </a>
     </section>
@@ -165,7 +172,7 @@
         <div class="about__visual">
           <div class="about__photo-wrapper">
             <div class="about__frame" aria-hidden="true"></div>
-            <img src="assets/images/about-photo.jpg" alt="Desenvolvedor no ambiente de trabalho" class="about__photo">
+            <img src="assets/images/about-photo.webp" alt="Desenvolvedor no ambiente de trabalho" class="about__photo">
             <div class="about__status-badge">
               <span class="about__status-dot" aria-hidden="true"></span>
               <span>Disponível para novos projetos</span>
@@ -186,7 +193,8 @@
           <div class="about__bio">
             <p>
               Sou João Kennedy estudante de Ciência da Computação no IFNMG e atuo como Desenvolvedor no Núcleo de
-              Desenvolvimento, Tecnologia e Inovação (NDTI) desde março de 2025. Atuo no desenvolvimento e manutenção do Cajuí, o sistema acadêmico institucional, utilizando PHP
+              Desenvolvimento, Tecnologia e Inovação (NDTI) desde março de 2025. Atuo no desenvolvimento e manutenção do
+              Cajuí, o sistema acadêmico institucional, utilizando PHP
               (Yii2) e arquitetura MVC. Em paralelo, desenvolvo interfaces com React e TypeScript em projetos
               web.
             </p>
@@ -228,20 +236,25 @@
           <!-- Card 1: Sistemas Web -->
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-command">
                 <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
               </svg>
             </div>
             <h3 class="service-card__title">Sistemas Web</h3>
             <p class="service-card__description">
-              Plataformas, painéis administrativos, lojas virtuais e sistemas personalizados que funcionam diretamente no navegador.
+              Plataformas, painéis administrativos, lojas virtuais e sistemas personalizados que funcionam diretamente
+              no navegador.
             </p>
             <a href="#contato" class="service-card__link" aria-label="Saiba mais sobre Sistemas Web">
               <span>Saiba mais</span>
               <span class="service-card__arrow" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right">
-                  <path d="M18 8L22 12L18 16"/>
-                  <path d="M2 12H22"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-move-right">
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
                 </svg>
               </span>
             </a>
@@ -250,21 +263,25 @@
           <!-- Card 2: Aplicações Mobile -->
           <article class="service-card service-card--featured">
             <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
                 <rect x="3" y="3" width="18" height="18" />
                 <rect x="7" y="7" width="10" height="10" fill="currentColor" stroke="none" />
               </svg>
             </div>
             <h3 class="service-card__title">Aplicações Mobile</h3>
             <p class="service-card__description">
-              Aplicativos para Android e iOS com interfaces intuitivas, desempenho e uma experiência agradável para o usuário.
+              Aplicativos para Android e iOS com interfaces intuitivas, desempenho e uma experiência agradável para o
+              usuário.
             </p>
             <a href="#contato" class="service-card__link" aria-label="Saiba mais sobre Aplicações Mobile">
               <span>Saiba mais</span>
               <span class="service-card__arrow" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right">
-                  <path d="M18 8L22 12L18 16"/>
-                  <path d="M2 12H22"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-move-right">
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
                 </svg>
               </span>
             </a>
@@ -273,7 +290,8 @@
           <!-- Card 3: Aplicações Desktop -->
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
                 <rect x="3" y="3" width="18" height="18" />
                 <line x1="3" y1="7.5" x2="21" y2="7.5" />
                 <line x1="3" y1="12" x2="21" y2="12" />
@@ -282,14 +300,17 @@
             </div>
             <h3 class="service-card__title">Aplicações Desktop</h3>
             <p class="service-card__description">
-              Sistemas instaláveis para Windows, macOS e Linux, ideais para rotinas internas e operações que precisam funcionar offline.
+              Sistemas instaláveis para Windows, macOS e Linux, ideais para rotinas internas e operações que precisam
+              funcionar offline.
             </p>
             <a href="#contato" class="service-card__link" aria-label="Saiba mais sobre Aplicações Desktop">
               <span>Saiba mais</span>
               <span class="service-card__arrow" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right">
-                  <path d="M18 8L22 12L18 16"/>
-                  <path d="M2 12H22"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-move-right">
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
                 </svg>
               </span>
             </a>
@@ -314,24 +335,27 @@
 
         <!-- Grid de Projetos -->
         <div class="portfolio__grid">
-          <!-- Card 1: Modelagem Hierárquica e Iluminação -->
+          <!-- Card 1: FinaHome -->
           <article class="project-card project-card--featured">
-            <a href="https://github.com/JoaoKSS/Modelagem-Hierarquica-e-Iluminacao" target="_blank" rel="noopener noreferrer" class="project-card__link" aria-label="Ver projeto Modelagem Hierárquica e Iluminação no GitHub (abre em nova aba)">
+            <a href="https://github.com/JoaoKSS/Projeto-FinaHome" target="_blank" rel="noopener noreferrer"
+              class="project-card__link" aria-label="Ver projeto FinaHome no GitHub (abre em nova aba)">
               <div class="project-card__image-container">
                 <div class="project-card__image-wrapper">
-                  <img src="assets/images/project-opengl-3d.png" alt="Renderização 3D de roda gigante colorida com modelagem hierárquica e iluminação em OpenGL" class="project-card__image" loading="lazy" width="971" height="607">
+                  <img src="assets/images/project-finahome.webp"
+                    alt="Interface do sistema FinaHome em versões desktop e mobile para gestão financeira residencial"
+                    class="project-card__image" loading="lazy" width="1280" height="800">
                 </div>
               </div>
               <div class="project-card__body">
                 <div class="project-card__top">
-                  <span class="project-card__category">Aplicação Desktop</span>
+                  <span class="project-card__category">Aplicação Desktop e Mobile</span>
                   <span class="project-card__action" aria-hidden="true">
                     <span class="project-card__icon" aria-hidden="true"></span>
                   </span>
                 </div>
-                <h3 class="project-card__title">Modelagem Hierárquica e Iluminação</h3>
+                <h3 class="project-card__title">FinaHome</h3>
                 <p class="project-card__description">
-                  Aplicação interativa em C++ e OpenGL que explora conceitos fundamentais de Computação Gráfica, transformações geométricas e iluminação em cena 3D.
+                  Sistema de controle de gastos residenciais, permitindo o gerenciamento prático de pessoas, transações e relatórios de totais.
                 </p>
               </div>
             </a>
@@ -339,35 +363,42 @@
 
           <!-- Coluna Direita: Cards Empilhados -->
           <div class="portfolio__column-stacked">
-            <!-- Card 2: Grão App -->
+            <!-- Card 2: SAGE -->
             <article class="project-card">
-              <a href="#contato" class="project-card__link" aria-label="Ver detalhes do aplicativo Grão App">
+              <a href="https://github.com/JoaoKSS/SAGE_2" target="_blank" rel="noopener noreferrer"
+                class="project-card__link" aria-label="Ver projeto SAGE no GitHub (abre em nova aba)">
                 <div class="project-card__image-container">
                   <div class="project-card__image-wrapper">
-                    <img src="assets/images/project-grao.jpg" alt="Mockup de aplicativo mobile Grão App em smartphones" class="project-card__image" loading="lazy" width="513" height="260">
+                    <img src="assets/images/project-sage.webp"
+                      alt="Interface do sistema SAGE exibindo painel de agendamento e gerenciamento de espaços"
+                      class="project-card__image" loading="lazy" width="513" height="260">
                   </div>
                 </div>
                 <div class="project-card__body">
                   <div class="project-card__top">
-                    <span class="project-card__category">Aplicativo Mobile</span>
+                    <span class="project-card__category">Aplicação Web </span>
                     <span class="project-card__action" aria-hidden="true">
                       <span class="project-card__icon" aria-hidden="true"></span>
                     </span>
                   </div>
-                  <h3 class="project-card__title">Grão App</h3>
+                  <h3 class="project-card__title">SAGE</h3>
                   <p class="project-card__description">
-                    Aplicativo de pedidos e fidelidade para uma cafeteria local.
+                    Sistema web para agendamento e gerenciamento inteligente de salas e espaços.
                   </p>
                 </div>
               </a>
             </article>
 
-            <!-- Card 3: Ateliê Pro -->
+            <!-- Card 3: Modelagem Hierárquica -->
             <article class="project-card">
-              <a href="#contato" class="project-card__link" aria-label="Ver detalhes da aplicação Ateliê Pro">
+              <a href="https://github.com/JoaoKSS/Modelagem-Hierarquica-e-Iluminacao" target="_blank"
+                rel="noopener noreferrer" class="project-card__link"
+                aria-label="Ver projeto Modelagem Hierárquica e Iluminação no GitHub (abre em nova aba)">
                 <div class="project-card__image-container">
                   <div class="project-card__image-wrapper">
-                    <img src="assets/images/project-atelie.jpg" alt="Interface da aplicação desktop Ateliê Pro exibindo agenda e calendário" class="project-card__image" loading="lazy" width="513" height="260">
+                    <img src="assets/images/project-opengl-3d.webp"
+                      alt="Renderização 3D de roda gigante colorida com modelagem hierárquica e iluminação em OpenGL"
+                      class="project-card__image" loading="lazy" width="513" height="260">
                   </div>
                 </div>
                 <div class="project-card__body">
@@ -377,9 +408,9 @@
                       <span class="project-card__icon" aria-hidden="true"></span>
                     </span>
                   </div>
-                  <h3 class="project-card__title">Ateliê Pro</h3>
+                  <h3 class="project-card__title">Modelagem Hierárquica</h3>
                   <p class="project-card__description">
-                    Aplicação desktop para organização de agenda, clientes e finanças de profissionais autônomos.
+                    Aplicação interativa com conceitos de Computação Gráfica e cena 3D.
                   </p>
                 </div>
               </a>

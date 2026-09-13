@@ -137,7 +137,7 @@
 
 /* Moldura e Imagem do Mockup */
 .project-card__image-container {
-  padding: clamp(0.85rem, 1.8vw, 1.25rem);
+  padding: clamp(1rem, 2.2vw, 1.35rem);
   padding-bottom: 0;
   width: 100%;
 }
@@ -152,12 +152,10 @@
 
 .project-card--featured .project-card__image-wrapper {
   aspect-ratio: 16 / 10;
-  min-height: 280px;
 }
 
 .project-card:not(.project-card--featured) .project-card__image-wrapper {
   aspect-ratio: 16 / 9;
-  min-height: 180px;
 }
 
 .project-card__image {
