@@ -251,6 +251,14 @@
   transition: color var(--transition-normal);
 }
 
+/* Botão Ver Mais Projetos */
+.portfolio__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(2.5rem, 5vw, var(--space-3xl));
+}
+
 @media (prefers-reduced-motion: reduce) {
   .project-card,
   .project-card__image,

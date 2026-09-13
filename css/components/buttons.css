@@ -35,6 +35,12 @@
   transform: translate(2px, -2px);
 }
 
+.btn__icon--arrow {
+  background-color: currentColor;
+  -webkit-mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
+}
+
 /* Botão Primário */
 .btn--primary,
 .btn--primary:visited {
