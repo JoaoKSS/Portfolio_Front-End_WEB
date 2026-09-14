@@ -29,7 +29,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-inline: 1rem;
+  padding-left: clamp(1.25rem, 3.5vw, 1.5rem);
+  padding-right: clamp(0.5rem, 2vw, 1rem);
 }
 
 .about__photo-wrapper {
@@ -49,13 +50,6 @@
   border-radius: var(--radius-xl);
   pointer-events: none;
   z-index: 1;
-}
-
-@media (max-width: 480px) {
-  .about__frame {
-    left: -12px;
-    border-radius: var(--radius-lg);
-  }
 }
 
 /* Foto proporcional em alta definição */
