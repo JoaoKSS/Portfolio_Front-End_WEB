@@ -57,7 +57,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  height: clamp(320px, 48vw, 520px);
+  height: clamp(250px, 52vw, 520px);
   object-fit: cover;
   border-radius: var(--radius-lg);
   display: block;
@@ -67,37 +67,41 @@
 /* Badge flutuante sobreposto no canto inferior esquerdo */
 .about__status-badge {
   position: absolute;
-  bottom: 35px;
-  left: -16px;
+  bottom: clamp(1.1rem, 3.5vw, 2.2rem);
+  left: clamp(-16px, -2vw, -10px);
   z-index: 3;
   display: inline-flex;
   align-items: center;
-  gap: var(--space-sm);
-  padding: 0.65rem 1.25rem;
+  gap: clamp(0.4rem, 1vw, var(--space-sm));
+  padding: clamp(0.45rem, 1.4vw, 0.65rem) clamp(0.75rem, 2vw, 1.25rem);
   background-color: var(--color-badge-bg);
   border: 1px solid var(--color-badge-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-sm);
+  font-size: clamp(0.74rem, 2vw, var(--font-size-sm));
   font-weight: 600;
   color: var(--color-badge-text);
   white-space: nowrap;
+  max-width: calc(100% + 12px);
   transition: background-color var(--transition-normal), border-color var(--transition-normal), color var(--transition-normal);
 }
 
-@media (max-width: 540px) {
+@media (max-width: 380px) {
   .about__status-badge {
-    left: 12px;
-    bottom: 18px;
-    font-size: 0.78rem;
-    padding: 0.5rem 0.85rem;
+    left: -8px;
+    bottom: 12px;
+    font-size: 0.72rem;
+    padding: 0.4rem 0.7rem;
+    white-space: normal;
+    line-height: 1.25;
   }
 }
 
 .about__status-dot {
   width: 8px;
   height: 8px;
+  flex-shrink: 0;
   background-color: var(--color-success-dot);
   border-radius: var(--radius-full);
   box-shadow: 0 0 8px var(--color-success-glow);
