@@ -34,8 +34,8 @@
   --color-border-hover: rgba(157, 125, 252, 0.4);
 
   /* Componentes: Cards, Pílulas e Badges no Escuro */
-  --color-card-bg: #141524;
-  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-card-bg: #1a1a20;
+  --color-card-border: rgba(255, 255, 255, 0.09);
   --color-pill-bg: #1d1e30;
   --color-pill-text: #cbd5e1;
   --color-badge-bg: #ffffff;

@@ -21,7 +21,6 @@
     }
   }
 
-  // Sincroniza atributos ARIA com o tema já aplicado pelo script no <head>
   applyTheme(getActiveTheme());
 
   // Alternância manual pelo botão
