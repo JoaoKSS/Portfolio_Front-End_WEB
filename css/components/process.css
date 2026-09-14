@@ -1,0 +1,170 @@
+/* Estilos da Seção Meu Processo (BEM) */
+
+.process {
+  padding-block: clamp(4rem, 7vw, var(--space-4xl));
+  background-color: var(--color-bg-secondary);
+  position: relative;
+  transition: background-color var(--transition-normal);
+}
+
+.process__container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho da Seção */
+.process__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-bottom: clamp(2.5rem, 5vw, var(--space-3xl));
+}
+
+.process__header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  max-width: 620px;
+}
+
+.process__tag {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-highlight);
+  text-transform: uppercase;
+  transition: color var(--transition-normal);
+}
+
+.process__title {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.15rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.12;
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  transition: color var(--transition-normal);
+}
+
+.process__subtitle {
+  font-size: clamp(0.925rem, 1.2vw, 1rem);
+  color: var(--color-text-secondary);
+  max-width: 36ch;
+  line-height: 1.6;
+  text-wrap: pretty;
+  margin-bottom: var(--space-xs);
+  transition: color var(--transition-normal);
+}
+
+/* Grade de Etapas */
+.process__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-border);
+  transition: border-color var(--transition-normal);
+}
+
+/* Etapa Individual */
+.process__step {
+  display: flex;
+  flex-direction: column;
+  padding-block: clamp(1.75rem, 3.5vw, 2.75rem);
+  position: relative;
+  transition: border-color var(--transition-normal);
+}
+
+/* Divisores no Mobile */
+.process__step:not(:last-child) {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.process__step-number {
+  font-family: var(--font-family-heading);
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
+  font-weight: 700;
+  color: var(--color-highlight);
+  letter-spacing: 0.05em;
+  margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
+  transition: color var(--transition-normal);
+}
+
+.process__step-title {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-xs);
+  transition: color var(--transition-normal);
+}
+
+.process__step-description {
+  font-size: clamp(0.875rem, 1vw, 0.95rem);
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  text-wrap: pretty;
+  transition: color var(--transition-normal);
+}
+
+/* Grade 2x2 */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .process__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process__step {
+    padding-inline: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  .process__step:nth-child(odd) {
+    border-right: 1px solid var(--color-border);
+    padding-left: 0;
+  }
+
+  .process__step:nth-child(even) {
+    padding-right: 0;
+  }
+
+  .process__step:nth-child(1),
+  .process__step:nth-child(2) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .process__step:nth-child(3),
+  .process__step:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+/* Grade 4 Colunas Horizontais */
+@media (min-width: 1024px) {
+  .process__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .process__step {
+    padding-inline: clamp(1.25rem, 2vw, 2.25rem);
+    border-bottom: none !important;
+  }
+
+  .process__step:first-child {
+    padding-left: 0;
+  }
+
+  .process__step:last-child {
+    padding-right: 0;
+  }
+
+  .process__step:not(:last-child) {
+    border-right: 1px solid var(--color-border);
+  }
+}

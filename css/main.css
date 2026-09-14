@@ -12,6 +12,7 @@
 @import url('./components/about.css');
 @import url('./components/services.css');
 @import url('./components/portfolio.css');
+@import url('./components/process.css');
 
 /* Utilitários Globais de Âncoras */
 section[id]:not(#hero) {
