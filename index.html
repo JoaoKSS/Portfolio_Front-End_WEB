@@ -481,6 +481,48 @@
     <!-- Seção Contato -->
     <section class="contact" id="contato" aria-labelledby="contact-title">
       <div class="container contact__container">
+        <!-- Conteúdo Textual -->
+        <div class="contact__content">
+          <span class="contact__tag">Vamos criar juntos?</span>
+          <h2 class="contact__title" id="contact-title">
+            Tem uma ideia?<br>
+            Vamos conversar.
+          </h2>
+          <p class="contact__subtitle">
+            Conte um pouco sobre o seu projeto. Será um prazer entender o desafio e pensar em uma solução para você.
+          </p>
+        </div>
+
+        <!-- Cards de Contato -->
+        <div class="contact__cards">
+          <!-- Card Email -->
+          <a href="mailto:joaokennedy208@gmail.com" class="contact-card" aria-label="Enviar e-mail para joaokennedy208@gmail.com">
+            <div class="contact-card__main">
+              <div class="contact-card__icon" aria-hidden="true">
+                <span class="contact-card__icon-symbol contact-card__icon-symbol--mail"></span>
+              </div>
+              <div class="contact-card__info">
+                <span class="contact-card__label">Escreva para mim</span>
+                <span class="contact-card__value">joaokennedy208@gmail.com</span>
+              </div>
+            </div>
+            <span class="contact-card__arrow" aria-hidden="true"></span>
+          </a>
+
+          <!-- Card WhatsApp -->
+          <a href="https://wa.me/5538988535141" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Iniciar conversa no WhatsApp com João Kennedy (abre em nova aba)">
+            <div class="contact-card__main">
+              <div class="contact-card__icon" aria-hidden="true">
+                <span class="contact-card__icon-symbol contact-card__icon-symbol--whatsapp"></span>
+              </div>
+              <div class="contact-card__info">
+                <span class="contact-card__label">Chame no WhatsApp</span>
+                <span class="contact-card__value">(38) 98853-5141</span>
+              </div>
+            </div>
+            <span class="contact-card__arrow" aria-hidden="true"></span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -489,6 +531,20 @@
   <!-- Rodapé -->
   <footer class="footer" id="footer">
     <div class="container footer__container">
+      <p class="footer__copy">
+        &copy; <span id="current-year">2026</span> João Kennedy. Desenvolvido com criatividade e código.
+      </p>
+      <div class="footer__socials" aria-label="Redes sociais e links profissionais">
+        <a href="https://linkedin.com/in/joãok-4372a9187" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Acessar perfil de João Kennedy no LinkedIn">
+          <span class="footer__icon footer__icon--linkedin" aria-hidden="true"></span>
+        </a>
+        <a href="https://github.com/JoaoKSS" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Acessar repositórios de João Kennedy no GitHub">
+          <span class="footer__icon footer__icon--github" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.instagram.com/joaokennedy_2?stkn=MXJhMDYwN2V4dWN4dA==" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Acessar perfil de João Kennedy">
+          <span class="footer__icon footer__icon--instagram" aria-hidden="true"></span>
+        </a>
+      </div>
     </div>
   </footer>
 
@@ -496,6 +552,7 @@
   <script src="js/theme.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/smooth-scroll.js" defer></script>
+  <script src="js/footer.js" defer></script>
 </body>
 
 </html>

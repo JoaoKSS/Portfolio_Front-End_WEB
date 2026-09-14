@@ -1,0 +1,209 @@
+/* Estilos da Seção Contato (BEM) */
+
+.contact {
+  position: relative;
+  padding-block: clamp(4.5rem, 8vw, var(--space-4xl));
+  background-color: var(--color-contact-bg);
+  background-image: 
+    linear-gradient(135deg, var(--color-contact-overlay-1) 0%, var(--color-contact-overlay-2) 50%, var(--color-contact-overlay-3) 100%),
+    radial-gradient(circle at 75% 50%, var(--color-contact-glow) 0%, transparent 60%),
+    url('../../assets/images/contact-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: var(--color-contact-title);
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    background-attachment: fixed;
+  }
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 5vw, var(--space-3xl));
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .contact__container {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(3rem, 6vw, var(--space-4xl));
+  }
+}
+
+/* Conteúdo Textual */
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  max-width: 580px;
+}
+
+.contact__tag {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-contact-tag);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
+.contact__title {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.25rem, 4.8vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.12;
+  color: var(--color-contact-title);
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  margin-bottom: var(--space-md);
+}
+
+.contact__subtitle {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  color: var(--color-contact-desc);
+  line-height: 1.65;
+  text-wrap: pretty;
+  max-width: 48ch;
+}
+
+/* Coluna de Cards de Contato */
+.contact__cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1.2rem, 2.2vw, 1.6rem);
+  background: var(--color-contact-card-bg);
+  border: 1px solid var(--color-contact-card-border);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  text-decoration: none;
+  color: var(--color-contact-value);
+  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  background: var(--color-contact-card-hover-bg);
+  border-color: var(--color-contact-card-hover-border);
+  box-shadow: var(--color-contact-card-shadow-hover);
+}
+
+.contact-card:focus-visible {
+  outline: 2px solid var(--color-contact-tag);
+  outline-offset: 3px;
+}
+
+.contact-card__main {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.25rem);
+}
+
+/* Ícone da Caixa de Contato */
+.contact-card__icon {
+  width: clamp(2.75rem, 3.8vw, 3.25rem);
+  height: clamp(2.75rem, 3.8vw, 3.25rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-contact-icon-bg);
+  border: 1px solid var(--color-contact-icon-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-contact-value);
+  flex-shrink: 0;
+  transition: background-color var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.contact-card:hover .contact-card__icon {
+  background: var(--color-contact-icon-hover-bg);
+  border-color: var(--color-contact-icon-hover-border);
+  transform: scale(1.05);
+}
+
+/* Símbolos Lucide via Mask */
+.contact-card__icon-symbol {
+  width: 1.35rem;
+  height: 1.35rem;
+  display: block;
+  background-color: currentColor;
+  pointer-events: none;
+}
+
+.contact-card__icon-symbol--mail {
+  -webkit-mask: url('../../assets/icons/at-sign.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/at-sign.svg') no-repeat center / contain;
+}
+
+.contact-card__icon-symbol--whatsapp {
+  -webkit-mask: url('../../assets/icons/whatsapp.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/whatsapp.svg') no-repeat center / contain;
+}
+
+/* Informações do Card */
+.contact-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-card__label {
+  font-size: var(--font-size-xs);
+  color: var(--color-contact-label);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.contact-card__value {
+  font-family: var(--font-family-heading);
+  font-size: clamp(0.95rem, 1.2vw, 1.125rem);
+  font-weight: 700;
+  color: var(--color-contact-value);
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+
+/* Ícone de Seta */
+.contact-card__arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  background-color: var(--color-contact-arrow);
+  -webkit-mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
+  flex-shrink: 0;
+  margin-left: var(--space-sm);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.contact-card:hover .contact-card__arrow {
+  background-color: var(--color-contact-arrow-hover);
+  transform: translate(3px, -3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-card,
+  .contact-card__icon,
+  .contact-card__arrow {
+    transition: none;
+  }
+  
+  .contact-card:hover {
+    transform: none;
+  }
+}

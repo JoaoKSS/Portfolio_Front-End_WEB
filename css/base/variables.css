@@ -111,6 +111,40 @@
   --color-primary-glow: rgba(109, 68, 248, 0.3);
   --color-success-glow: rgba(34, 197, 94, 0.6);
 
+  /* Seção de Contato */
+  --color-contact-bg: #0d0c15;
+  --color-contact-overlay-1: rgba(18, 15, 30, 0.88);
+  --color-contact-overlay-2: rgba(24, 18, 42, 0.78);
+  --color-contact-overlay-3: rgba(14, 11, 24, 0.94);
+  --color-contact-glow: rgba(109, 68, 248, 0.32);
+  --color-contact-tag: #c4b5fd;
+  --color-contact-title: var(--color-text-on-dark);
+  --color-contact-desc: var(--color-text-on-dark-muted);
+  --color-contact-card-bg: rgba(255, 255, 255, 0.05);
+  --color-contact-card-border: rgba(255, 255, 255, 0.12);
+  --color-contact-card-hover-bg: rgba(255, 255, 255, 0.09);
+  --color-contact-card-hover-border: rgba(157, 125, 252, 0.45);
+  --color-contact-card-shadow-hover: 0 16px 36px -4px rgba(0, 0, 0, 0.45), 0 0 24px rgba(109, 68, 248, 0.25);
+  --color-contact-icon-bg: rgba(255, 255, 255, 0.08);
+  --color-contact-icon-border: rgba(255, 255, 255, 0.15);
+  --color-contact-icon-hover-bg: rgba(109, 68, 248, 0.28);
+  --color-contact-icon-hover-border: rgba(157, 125, 252, 0.5);
+  --color-contact-label: #cbd5e1;
+  --color-contact-value: var(--color-text-on-dark);
+  --color-contact-arrow: #cbd5e1;
+  --color-contact-arrow-hover: #ffffff;
+
+  /* Rodapé */
+  --color-footer-bg: #090810;
+  --color-footer-border: rgba(255, 255, 255, 0.08);
+  --color-footer-text: #94a3b8;
+  --color-footer-social-bg: rgba(255, 255, 255, 0.05);
+  --color-footer-social-border: rgba(255, 255, 255, 0.12);
+  --color-footer-social-text: #94a3b8;
+  --color-footer-social-hover-bg: var(--color-primary);
+  --color-footer-social-hover-border: var(--color-primary);
+  --color-footer-social-hover-text: #ffffff;
+
   /* Sombras */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);

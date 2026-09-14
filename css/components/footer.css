@@ -1,0 +1,101 @@
+/* Estilos do Rodapé (BEM) */
+
+.footer {
+  background-color: var(--color-footer-bg);
+  border-top: 1px solid var(--color-footer-border);
+  padding-block: clamp(1.75rem, 3.5vw, 2.5rem);
+  position: relative;
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer__copy {
+  font-size: clamp(0.8125rem, 1vw, 0.875rem);
+  color: var(--color-footer-text);
+  line-height: 1.6;
+  transition: color var(--transition-normal);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-footer-social-bg);
+  border: 1px solid var(--color-footer-social-border);
+  color: var(--color-footer-social-text);
+  text-decoration: none;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  background-color: var(--color-footer-social-hover-bg);
+  color: var(--color-footer-social-hover-text);
+  border-color: var(--color-footer-social-hover-border);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px var(--color-primary-glow);
+}
+
+.footer__social-link:focus-visible {
+  outline: 2px solid var(--color-contact-tag);
+  outline-offset: 2px;
+}
+
+/* Ícones Sociais */
+.footer__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+  background-color: currentColor;
+  pointer-events: none;
+  transition: transform var(--transition-fast);
+}
+
+.footer__icon--linkedin {
+  -webkit-mask: url('../../assets/icons/linkedin.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/linkedin.svg') no-repeat center / contain;
+}
+
+.footer__icon--github {
+  -webkit-mask: url('../../assets/icons/github.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/github.svg') no-repeat center / contain;
+}
+
+.footer__icon--instagram {
+  -webkit-mask: url('../../assets/icons/instagram.svg') no-repeat center / contain;
+  mask: url('../../assets/icons/instagram.svg') no-repeat center / contain;
+}
+
+@media (max-width: 639px) {
+  .footer__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-md);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__social-link {
+    transition: none;
+  }
+  
+  .footer__social-link:hover {
+    transform: none;
+  }
+}
