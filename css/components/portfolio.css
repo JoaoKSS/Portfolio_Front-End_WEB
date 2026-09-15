@@ -211,7 +211,7 @@
   flex-shrink: 0;
 }
 
-/* Ícone da Ação: Padrão profissional com CSS Mask referenciando o arquivo de ícone */
+/* Ícone da Ação */
 .project-card__icon {
   width: 1.15rem;
   height: 1.15rem;
@@ -257,24 +257,4 @@
   justify-content: center;
   align-items: center;
   margin-top: clamp(2.5rem, 5vw, var(--space-3xl));
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .project-card,
-  .project-card__image,
-  .project-card__action {
-    transition: none;
-  }
-
-  .project-card:hover {
-    transform: none;
-  }
-
-  .project-card:hover .project-card__image {
-    transform: none;
-  }
-
-  .project-card:hover .project-card__action {
-    transform: none;
-  }
 }

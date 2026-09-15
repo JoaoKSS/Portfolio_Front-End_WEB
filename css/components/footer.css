@@ -89,13 +89,3 @@
     gap: var(--space-md);
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .footer__social-link {
-    transition: none;
-  }
-  
-  .footer__social-link:hover {
-    transform: none;
-  }
-}

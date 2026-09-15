@@ -286,13 +286,3 @@
     align-self: center;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .hero__scroll svg {
-    animation: none;
-  }
-
-  .hero__editor {
-    transition: none;
-  }
-}

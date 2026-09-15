@@ -231,24 +231,3 @@
   outline-offset: 4px;
   border-radius: var(--radius-sm);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .service-card,
-  .service-card__icon,
-  .service-card__arrow {
-    transition: none;
-  }
-
-  .service-card:hover,
-  .service-card--featured:hover {
-    transform: none;
-  }
-
-  .service-card:hover .service-card__icon {
-    transform: none;
-  }
-
-  .service-card__link:hover .service-card__arrow {
-    transform: none;
-  }
-}

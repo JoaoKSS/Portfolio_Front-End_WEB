@@ -15,12 +15,6 @@ html {
   overflow-x: clip;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-
 body {
   min-height: 100vh;
   line-height: 1.6;

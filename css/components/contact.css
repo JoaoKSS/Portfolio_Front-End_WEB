@@ -195,15 +195,3 @@
   background-color: var(--color-contact-arrow-hover);
   transform: translate(3px, -3px);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .contact-card,
-  .contact-card__icon,
-  .contact-card__arrow {
-    transition: none;
-  }
-  
-  .contact-card:hover {
-    transform: none;
-  }
-}
