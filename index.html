@@ -164,7 +164,7 @@
     <section class="about" id="sobre" aria-labelledby="about-title">
       <div class="container about__container">
         <!-- Coluna da Esquerda - Composição com Moldura, Foto e Badge Flutuante -->
-        <div class="about__visual">
+        <div class="about__visual" data-reveal>
           <div class="about__photo-wrapper">
             <div class="about__frame" aria-hidden="true"></div>
             <img src="assets/images/about-photo.webp" alt="Desenvolvedor no ambiente de trabalho" class="about__photo">
@@ -176,7 +176,7 @@
         </div>
 
         <!-- Coluna da Direita - Conteúdo e Bio -->
-        <div class="about__content">
+        <div class="about__content" data-reveal data-reveal-delay="1">
           <span class="about__tag">SOBRE MIM</span>
 
           <h2 class="about__title" id="about-title">
@@ -215,7 +215,7 @@
     <!-- Seção Serviços -->
     <section class="services" id="servicos" aria-labelledby="services-title">
       <div class="container services__container">
-        <header class="services__header">
+        <header class="services__header" data-reveal>
           <div class="services__header-left">
             <span class="services__tag">COMO POSSO AJUDAR</span>
             <h2 class="services__title" id="services-title">
@@ -229,7 +229,7 @@
 
         <div class="services__grid">
           <!-- Card 1: Sistemas Web -->
-          <article class="service-card">
+          <article class="service-card" data-reveal data-reveal-delay="1">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -256,7 +256,7 @@
           </article>
 
           <!-- Card 2: Aplicações Mobile -->
-          <article class="service-card service-card--featured">
+          <article class="service-card service-card--featured" data-reveal data-reveal-delay="2">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
@@ -283,7 +283,7 @@
           </article>
 
           <!-- Card 3: Aplicações Desktop -->
-          <article class="service-card">
+          <article class="service-card" data-reveal data-reveal-delay="3">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
@@ -318,7 +318,7 @@
     <section class="portfolio" id="projetos" aria-labelledby="portfolio-title">
       <div class="container portfolio__container">
         <!-- Cabeçalho da Seção -->
-        <header class="portfolio__header">
+        <header class="portfolio__header" data-reveal>
           <div class="portfolio__header-content">
             <span class="portfolio__tag">Portfólio</span>
             <h2 class="portfolio__title" id="portfolio-title">Projetos que fazem a diferença</h2>
@@ -331,7 +331,7 @@
         <!-- Grid de Projetos -->
         <div class="portfolio__grid">
           <!-- Card 1: FinaHome -->
-          <article class="project-card project-card--featured">
+          <article class="project-card project-card--featured" data-reveal data-reveal-delay="1">
             <a href="https://github.com/JoaoKSS/Projeto-FinaHome" target="_blank" rel="noopener noreferrer"
               class="project-card__link" aria-label="Ver projeto FinaHome no GitHub (abre em nova aba)">
               <div class="project-card__image-container">
@@ -357,7 +357,7 @@
           </article>
 
           <!-- Coluna Direita: Cards Empilhados -->
-          <div class="portfolio__column-stacked">
+          <div class="portfolio__column-stacked" data-reveal data-reveal-delay="2">
             <!-- Card 2: SAGE -->
             <article class="project-card">
               <a href="https://github.com/JoaoKSS/SAGE_2" target="_blank" rel="noopener noreferrer"
@@ -414,7 +414,7 @@
         </div>
 
         <!-- Botão Ver Mais Projetos -->
-        <div class="portfolio__action">
+        <div class="portfolio__action" data-reveal>
           <a href="https://github.com/JoaoKSS?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn--primary" aria-label="Ver mais projetos no GitHub (abre em nova aba)">
             <span>Ver mais projetos</span>
             <span class="btn__icon btn__icon--arrow" aria-hidden="true"></span>
@@ -427,7 +427,7 @@
     <section class="process" id="processo" aria-labelledby="process-title">
       <div class="container process__container">
         <!-- Cabeçalho da Seção -->
-        <header class="process__header">
+        <header class="process__header" data-reveal>
           <div class="process__header-content">
             <span class="process__tag">Meu Processo</span>
             <h2 class="process__title" id="process-title">Do desafio à solução</h2>
@@ -440,7 +440,7 @@
         <!-- Grade de Etapas -->
         <ol class="process__grid">
           <!-- Etapa 1 -->
-          <li class="process__step">
+          <li class="process__step" data-reveal data-reveal-delay="1">
             <span class="process__step-number" aria-hidden="true">01</span>
             <h3 class="process__step-title">Descoberta</h3>
             <p class="process__step-description">
@@ -449,7 +449,7 @@
           </li>
 
           <!-- Etapa 2 -->
-          <li class="process__step">
+          <li class="process__step" data-reveal data-reveal-delay="2">
             <span class="process__step-number" aria-hidden="true">02</span>
             <h3 class="process__step-title">Planejamento</h3>
             <p class="process__step-description">
@@ -458,7 +458,7 @@
           </li>
 
           <!-- Etapa 3 -->
-          <li class="process__step">
+          <li class="process__step" data-reveal data-reveal-delay="3">
             <span class="process__step-number" aria-hidden="true">03</span>
             <h3 class="process__step-title">Desenvolvimento</h3>
             <p class="process__step-description">
@@ -467,7 +467,7 @@
           </li>
 
           <!-- Etapa 4 -->
-          <li class="process__step">
+          <li class="process__step" data-reveal data-reveal-delay="4">
             <span class="process__step-number" aria-hidden="true">04</span>
             <h3 class="process__step-title">Entrega</h3>
             <p class="process__step-description">
@@ -482,7 +482,7 @@
     <section class="contact" id="contato" aria-labelledby="contact-title">
       <div class="container contact__container">
         <!-- Conteúdo Textual -->
-        <div class="contact__content">
+        <div class="contact__content" data-reveal>
           <span class="contact__tag">Vamos criar juntos?</span>
           <h2 class="contact__title" id="contact-title">
             Tem uma ideia?<br>
@@ -494,7 +494,7 @@
         </div>
 
         <!-- Cards de Contato -->
-        <div class="contact__cards">
+        <div class="contact__cards" data-reveal data-reveal-delay="1">
           <!-- Card Email -->
           <a href="mailto:joaokennedy208@gmail.com" class="contact-card" aria-label="Enviar e-mail para joaokennedy208@gmail.com">
             <div class="contact-card__main">
@@ -553,6 +553,7 @@
   <script src="js/menu.js" defer></script>
   <script src="js/smooth-scroll.js" defer></script>
   <script src="js/footer.js" defer></script>
+  <script src="js/scroll-reveal.js" defer></script>
 </body>
 
 </html>

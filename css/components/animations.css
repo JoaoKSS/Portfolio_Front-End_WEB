@@ -1,0 +1,32 @@
+/* Animações de Revelação ao Rolar a Página */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 550ms cubic-bezier(0.16, 1, 0.3, 1), transform 550ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efeito cascata para telas */
+@media (min-width: 768px) {
+  [data-reveal-delay="1"] {
+    transition-delay: 80ms;
+  }
+
+  [data-reveal-delay="2"] {
+    transition-delay: 160ms;
+  }
+
+  [data-reveal-delay="3"] {
+    transition-delay: 240ms;
+  }
+
+  [data-reveal-delay="4"] {
+    transition-delay: 320ms;
+  }
+}
