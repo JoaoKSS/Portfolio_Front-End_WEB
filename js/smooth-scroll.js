@@ -27,8 +27,8 @@
   }
 
   function getActiveId() {
-    const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
-    if (isAtBottom && navTargets.length > 0) {
+    const isNearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 150;
+    if (isNearBottom && navTargets.length > 0) {
       return navTargets[navTargets.length - 1].id;
     }
 
@@ -55,7 +55,6 @@
     });
   });
 
-  // Scroll spy com throttle via requestAnimationFrame
   let ticking = false;
   window.addEventListener(
     'scroll',
