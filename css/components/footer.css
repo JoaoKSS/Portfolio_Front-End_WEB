@@ -61,24 +61,8 @@
   width: 1.15rem;
   height: 1.15rem;
   display: block;
-  background-color: currentColor;
   pointer-events: none;
   transition: transform var(--transition-fast);
-}
-
-.footer__icon--linkedin {
-  -webkit-mask: url('../../assets/icons/linkedin.svg') no-repeat center / contain;
-  mask: url('../../assets/icons/linkedin.svg') no-repeat center / contain;
-}
-
-.footer__icon--github {
-  -webkit-mask: url('../../assets/icons/github.svg') no-repeat center / contain;
-  mask: url('../../assets/icons/github.svg') no-repeat center / contain;
-}
-
-.footer__icon--instagram {
-  -webkit-mask: url('../../assets/icons/instagram.svg') no-repeat center / contain;
-  mask: url('../../assets/icons/instagram.svg') no-repeat center / contain;
 }
 
 @media (max-width: 639px) {

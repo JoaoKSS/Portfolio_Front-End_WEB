@@ -216,9 +216,6 @@
   width: 1.15rem;
   height: 1.15rem;
   display: block;
-  background-color: currentColor;
-  -webkit-mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
-  mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
   pointer-events: none;
   transition: transform var(--transition-fast);
 }

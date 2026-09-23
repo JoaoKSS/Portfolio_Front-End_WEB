@@ -136,23 +136,12 @@
   transform: scale(1.05);
 }
 
-/* Símbolos Lucide via Mask */
+/* Símbolos dos Cards */
 .contact-card__icon-symbol {
   width: 1.35rem;
   height: 1.35rem;
   display: block;
-  background-color: currentColor;
   pointer-events: none;
-}
-
-.contact-card__icon-symbol--mail {
-  -webkit-mask: url('../../assets/icons/at-sign.svg') no-repeat center / contain;
-  mask: url('../../assets/icons/at-sign.svg') no-repeat center / contain;
-}
-
-.contact-card__icon-symbol--whatsapp {
-  -webkit-mask: url('../../assets/icons/whatsapp.svg') no-repeat center / contain;
-  mask: url('../../assets/icons/whatsapp.svg') no-repeat center / contain;
 }
 
 /* Informações do Card */
@@ -183,15 +172,13 @@
   width: 1.25rem;
   height: 1.25rem;
   display: block;
-  background-color: var(--color-contact-arrow);
-  -webkit-mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
-  mask: url('../../assets/icons/arrow-up-right.svg') no-repeat center / contain;
+  color: var(--color-contact-arrow);
   flex-shrink: 0;
   margin-left: var(--space-sm);
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  transition: transform var(--transition-fast), color var(--transition-fast);
 }
 
 .contact-card:hover .contact-card__arrow {
-  background-color: var(--color-contact-arrow-hover);
+  color: var(--color-contact-arrow-hover);
   transform: translate(3px, -3px);
 }
