@@ -6,9 +6,13 @@
   }
 
   const navLinks = document.querySelectorAll('.header__menu-link');
-  const sections = Array.from(document.querySelectorAll('section[id]')).filter(
-    (s) => s.id !== 'hero'
-  );
+  const navTargets = Array.from(navLinks)
+    .map((link) => {
+      const id = link.getAttribute('href')?.slice(1);
+      const element = id ? document.getElementById(id) : null;
+      return element ? { id, element } : null;
+    })
+    .filter(Boolean);
 
   function setActive(id) {
     navLinks.forEach((link) => {
@@ -23,11 +27,17 @@
   }
 
   function getActiveId() {
-    const trigger = window.scrollY + window.innerHeight * 0.4;
-    let active = 'sobre';
-    for (const section of sections) {
-      if (section.offsetTop <= trigger) {
-        active = section.id;
+    const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
+    if (isAtBottom && navTargets.length > 0) {
+      return navTargets[navTargets.length - 1].id;
+    }
+
+    const trigger = window.scrollY + window.innerHeight * 0.35;
+    let active = navTargets[0] ? navTargets[0].id : 'sobre';
+
+    for (const target of navTargets) {
+      if (target.element.offsetTop <= trigger) {
+        active = target.id;
       }
     }
     return active;

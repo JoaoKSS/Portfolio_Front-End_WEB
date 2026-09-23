@@ -64,6 +64,21 @@
   --color-nav-toggle-border: rgba(255, 255, 255, 0.15);
   --color-nav-toggle-bar: #ffffff;
 
+  /* Cabeçalho Flutuante no Escuro */
+  --color-header-scrolled-bg: var(--color-bg-glass);
+  --color-header-scrolled-border: var(--color-border);
+  --shadow-header-scrolled: var(--shadow-sm);
+  --color-header-scrolled-logo: var(--color-logo-text);
+  --color-header-scrolled-link: var(--color-nav-link);
+  --color-header-scrolled-link-hover: var(--color-nav-link-hover);
+  --color-header-scrolled-link-active: var(--color-nav-link-active);
+  --color-header-scrolled-toggle-bg: var(--color-theme-toggle-bg);
+  --color-header-scrolled-toggle-border: transparent;
+  --color-header-scrolled-toggle-shadow: var(--shadow-sm);
+  --color-header-scrolled-nav-toggle-bg: var(--color-nav-toggle-bg);
+  --color-header-scrolled-nav-toggle-border: var(--color-nav-toggle-border);
+  --color-header-scrolled-nav-toggle-bar: var(--color-nav-toggle-bar);
+
   /* Editor de Código no Escuro */
   --color-editor-bg: #171827;
   --color-editor-border: rgba(255, 255, 255, 0.08);
@@ -186,10 +201,17 @@
   /* Layout */
   --container-max-width: 1280px;
   --container-padding: clamp(1rem, 3.5vw, 2rem);
-  --header-height: 4.75rem;
+  --header-height: 3.75rem;
   --z-header: 1000;
   --z-drawer: 1100;
 }
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 4.15rem;
+  }
+}
+
 
 /* Tema Claro Global */
 [data-theme="light"] {
@@ -250,4 +272,19 @@
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.1);
+
+  /* Cabeçalho Flutuante no Claro */
+  --color-header-scrolled-bg: rgba(255, 255, 255, 0.92);
+  --color-header-scrolled-border: rgba(0, 0, 0, 0.08);
+  --shadow-header-scrolled: 0 4px 20px -2px rgba(0, 0, 0, 0.07);
+  --color-header-scrolled-logo: var(--color-text-primary);
+  --color-header-scrolled-link: var(--color-text-secondary);
+  --color-header-scrolled-link-hover: var(--color-primary);
+  --color-header-scrolled-link-active: var(--color-primary);
+  --color-header-scrolled-toggle-bg: #ffffff;
+  --color-header-scrolled-toggle-border: rgba(0, 0, 0, 0.12);
+  --color-header-scrolled-toggle-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --color-header-scrolled-nav-toggle-bg: rgba(0, 0, 0, 0.05);
+  --color-header-scrolled-nav-toggle-border: rgba(0, 0, 0, 0.12);
+  --color-header-scrolled-nav-toggle-bar: var(--color-text-primary);
 }
