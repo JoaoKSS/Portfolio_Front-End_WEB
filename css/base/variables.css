@@ -1,18 +1,18 @@
 /* Configuração da paleta de cores, tipografia, espaçamentos e raios */
 
 :root {
-  /* Superfícies e Fundos - Tema Escuro */
-  --color-bg-primary: #0b0c12;
-  --color-bg-secondary: #131420;
-  --color-bg-tertiary: #1b1c2e;
-  --color-bg-elevated: #23253b;
-  --color-bg-glass: rgba(11, 12, 18, 0.8);
+  /* Superfícies e Fundos - Tema Escuro (Midnight Cobalt) */
+  --color-bg-primary: #070b14;
+  --color-bg-secondary: #0c1220;
+  --color-bg-tertiary: #111a2e;
+  --color-bg-elevated: #16223d;
+  --color-bg-glass: rgba(7, 11, 20, 0.85);
 
-  /* Acentos Roxo/Violeta */
-  --color-primary: #6d44f8;
-  --color-primary-hover: #5b32e6;
-  --color-primary-light: rgba(109, 68, 248, 0.14);
-  --color-highlight: #9d7dfc;
+  /* Acentos Azul Cobalto Elétrico */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: rgba(37, 99, 235, 0.14);
+  --color-highlight: #60a5fa;
 
   /* Status */
   --color-success: #10b981;
@@ -26,17 +26,17 @@
   --color-text-on-dark: #ffffff;
   --color-text-on-dark-muted: #cbd5e1;
   --color-text-on-dark-subtle: #94a3b8;
-  --color-accent-on-dark: #9d7dfc;
+  --color-accent-on-dark: #60a5fa;
 
   /* Bordas */
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-subtle: rgba(255, 255, 255, 0.04);
-  --color-border-hover: rgba(157, 125, 252, 0.4);
+  --color-border-hover: rgba(96, 165, 250, 0.45);
 
   /* Componentes: Cards, Pílulas e Badges no Escuro */
-  --color-card-bg: #1a1a20;
+  --color-card-bg: #0e1626;
   --color-card-border: rgba(255, 255, 255, 0.09);
-  --color-pill-bg: #1d1e30;
+  --color-pill-bg: #141f36;
   --color-pill-text: #cbd5e1;
   --color-badge-bg: #ffffff;
   --color-badge-border: #e2e8f0;
@@ -55,11 +55,11 @@
   /* Controles e Navegação do Cabeçalho no Escuro */
   --color-nav-link: #94a3b8;
   --color-nav-link-hover: #ffffff;
-  --color-nav-link-active: #9d7dfc;
+  --color-nav-link-active: #60a5fa;
   --color-theme-toggle-bg: #ffffff;
   --color-theme-toggle-color: #0f172a;
   --color-theme-icon-sun: #f59e0b;
-  --color-theme-icon-moon: #6366f1;
+  --color-theme-icon-moon: #2563eb;
   --color-nav-toggle-bg: rgba(255, 255, 255, 0.08);
   --color-nav-toggle-border: rgba(255, 255, 255, 0.15);
   --color-nav-toggle-bar: #ffffff;
@@ -80,13 +80,13 @@
   --color-header-scrolled-nav-toggle-bar: var(--color-nav-toggle-bar);
 
   /* Editor de Código no Escuro */
-  --color-editor-bg: #171827;
+  --color-editor-bg: #0c1322;
   --color-editor-border: rgba(255, 255, 255, 0.08);
   --color-editor-header-bg: rgba(255, 255, 255, 0.02);
   --color-editor-header-border: rgba(255, 255, 255, 0.05);
   --color-editor-text: #e2e8f0;
-  --color-editor-shadow: rgba(0, 0, 0, 0.4);
-  --color-editor-glow: rgba(109, 68, 248, 0.2);
+  --color-editor-shadow: rgba(0, 0, 0, 0.45);
+  --color-editor-glow: rgba(37, 99, 235, 0.25);
 
   /* Card de Serviço em Destaque */
   --color-card-featured-bg: var(--color-primary);
@@ -97,12 +97,12 @@
   --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
   --color-card-featured-icon-hover-bg: rgba(255, 255, 255, 0.28);
   --color-card-featured-icon-color: #ffffff;
-  --shadow-card-featured: 0 12px 28px -4px rgba(157, 125, 252, 0.35);
-  --shadow-card-featured-hover: 0 18px 36px -4px rgba(157, 125, 252, 0.5);
+  --shadow-card-featured: 0 12px 28px -4px rgba(37, 99, 235, 0.35);
+  --shadow-card-featured-hover: 0 18px 36px -4px rgba(37, 99, 235, 0.5);
 
   /* Ícones dos Cards de Serviço no Tema Escuro */
-  --color-card-icon-bg: rgba(157, 125, 252, 0.18);
-  --color-card-icon-hover-bg: rgba(157, 125, 252, 0.28);
+  --color-card-icon-bg: rgba(37, 99, 235, 0.16);
+  --color-card-icon-hover-bg: rgba(37, 99, 235, 0.26);
   --color-service-link-hover: #ffffff;
 
   /* Indicadores de Janela / Dots */
@@ -117,40 +117,40 @@
   --color-syntax-comment: #64748b;
 
   /* Hero: Overlays e Efeitos de Fundo */
-  --color-hero-bg: #0b0c12;
-  --color-hero-overlay-1: rgba(15, 16, 23, 0.86);
-  --color-hero-overlay-2: rgba(15, 16, 23, 0.74);
-  --color-hero-overlay-3: rgba(15, 16, 23, 0.92);
-  --color-hero-glow: rgba(109, 68, 248, 0.25);
+  --color-hero-bg: #070b14;
+  --color-hero-overlay-1: rgba(7, 11, 20, 0.80);
+  --color-hero-overlay-2: rgba(9, 16, 32, 0.62);
+  --color-hero-overlay-3: rgba(7, 11, 20, 0.86);
+  --color-hero-glow: rgba(37, 99, 235, 0.32);
   --color-logo-text: #ffffff;
-  --color-primary-glow: rgba(109, 68, 248, 0.3);
+  --color-primary-glow: rgba(37, 99, 235, 0.35);
   --color-success-glow: rgba(34, 197, 94, 0.6);
 
   /* Seção de Contato */
-  --color-contact-bg: #0d0c15;
-  --color-contact-overlay-1: rgba(18, 15, 30, 0.88);
-  --color-contact-overlay-2: rgba(24, 18, 42, 0.78);
-  --color-contact-overlay-3: rgba(14, 11, 24, 0.94);
-  --color-contact-glow: rgba(109, 68, 248, 0.32);
-  --color-contact-tag: #c4b5fd;
+  --color-contact-bg: #091530;
+  --color-contact-overlay-1: rgba(12, 26, 64, 0.82);
+  --color-contact-overlay-2: rgba(26, 66, 175, 0.68);
+  --color-contact-overlay-3: rgba(8, 18, 48, 0.86);
+  --color-contact-glow: rgba(37, 99, 235, 0.35);
+  --color-contact-tag: #bfdbfe;
   --color-contact-title: var(--color-text-on-dark);
   --color-contact-desc: var(--color-text-on-dark-muted);
-  --color-contact-card-bg: rgba(255, 255, 255, 0.05);
-  --color-contact-card-border: rgba(255, 255, 255, 0.12);
-  --color-contact-card-hover-bg: rgba(255, 255, 255, 0.09);
-  --color-contact-card-hover-border: rgba(157, 125, 252, 0.45);
-  --color-contact-card-shadow-hover: 0 16px 36px -4px rgba(0, 0, 0, 0.45), 0 0 24px rgba(109, 68, 248, 0.25);
-  --color-contact-icon-bg: rgba(255, 255, 255, 0.08);
-  --color-contact-icon-border: rgba(255, 255, 255, 0.15);
-  --color-contact-icon-hover-bg: rgba(109, 68, 248, 0.28);
-  --color-contact-icon-hover-border: rgba(157, 125, 252, 0.5);
+  --color-contact-card-bg: rgba(255, 255, 255, 0.08);
+  --color-contact-card-border: rgba(255, 255, 255, 0.16);
+  --color-contact-card-hover-bg: rgba(255, 255, 255, 0.14);
+  --color-contact-card-hover-border: rgba(191, 219, 254, 0.55);
+  --color-contact-card-shadow-hover: 0 16px 36px -4px rgba(0, 0, 0, 0.4), 0 0 28px rgba(37, 99, 235, 0.35);
+  --color-contact-icon-bg: rgba(255, 255, 255, 0.12);
+  --color-contact-icon-border: rgba(255, 255, 255, 0.20);
+  --color-contact-icon-hover-bg: rgba(37, 99, 235, 0.35);
+  --color-contact-icon-hover-border: rgba(147, 197, 253, 0.6);
   --color-contact-label: #cbd5e1;
   --color-contact-value: var(--color-text-on-dark);
   --color-contact-arrow: #cbd5e1;
   --color-contact-arrow-hover: #ffffff;
 
   /* Rodapé */
-  --color-footer-bg: #090810;
+  --color-footer-bg: #05080f;
   --color-footer-border: rgba(255, 255, 255, 0.08);
   --color-footer-text: #94a3b8;
   --color-footer-social-bg: rgba(255, 255, 255, 0.05);
@@ -222,11 +222,11 @@
   --color-bg-elevated: #e2e8f0;
   --color-bg-glass: rgba(255, 255, 255, 0.88);
 
-  /* Acentos Roxo no Fundo Claro */
-  --color-primary: #6d44f8;
-  --color-primary-hover: #5b32e6;
-  --color-primary-light: rgba(109, 68, 248, 0.08);
-  --color-highlight: #6d44f8;
+  /* Acentos Azul Cobalto no Fundo Claro */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: rgba(37, 99, 235, 0.08);
+  --color-highlight: #2563eb;
 
   /* Textos - Alto Contraste no Claro */
   --color-text-primary: #0f172a;
@@ -237,7 +237,7 @@
   /* Bordas */
   --color-border: rgba(0, 0, 0, 0.08);
   --color-border-subtle: rgba(0, 0, 0, 0.04);
-  --color-border-hover: rgba(109, 68, 248, 0.35);
+  --color-border-hover: rgba(37, 99, 235, 0.35);
 
   /* Componentes: Cards, Pílulas e Badges no Claro */
   --color-card-bg: #ffffff;
@@ -260,12 +260,12 @@
   --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
   --color-card-featured-icon-hover-bg: rgba(255, 255, 255, 0.28);
   --color-card-featured-icon-color: #ffffff;
-  --shadow-card-featured: 0 12px 28px -4px rgba(99, 102, 241, 0.35);
-  --shadow-card-featured-hover: 0 18px 36px -4px rgba(99, 102, 241, 0.5);
+  --shadow-card-featured: 0 12px 28px -4px rgba(37, 99, 235, 0.35);
+  --shadow-card-featured-hover: 0 18px 36px -4px rgba(37, 99, 235, 0.5);
 
   /* Ícones dos Cards de Serviço no Tema Claro */
-  --color-card-icon-bg: rgba(109, 68, 248, 0.08);
-  --color-card-icon-hover-bg: rgba(109, 68, 248, 0.15);
+  --color-card-icon-bg: rgba(37, 99, 235, 0.08);
+  --color-card-icon-hover-bg: rgba(37, 99, 235, 0.15);
   --color-service-link-hover: var(--color-primary-hover);
 
   /* Sombras Suaves para Superfícies Claras */
