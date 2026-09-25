@@ -87,6 +87,7 @@
   --color-editor-text: #e2e8f0;
   --color-editor-shadow: rgba(0, 0, 0, 0.45);
   --color-editor-glow: rgba(37, 99, 235, 0.25);
+  --shadow-editor: 0 12px 30px rgba(0, 0, 0, 0.5);
 
   /* Card de Serviço em Destaque */
   --color-card-featured-bg: var(--color-primary);
@@ -121,7 +122,7 @@
   --color-hero-overlay-1: rgba(15, 16, 23, 0.86);
   --color-hero-overlay-2: rgba(15, 16, 23, 0.74);
   --color-hero-overlay-3: rgba(15, 16, 23, 0.92);
-  --color-hero-glow: rgba(37, 99, 235, 0.25);
+  --color-hero-glow: transparent;
   --color-logo-text: #ffffff;
   --color-primary-glow: rgba(37, 99, 235, 0.35);
   --color-success-glow: rgba(34, 197, 94, 0.6);
@@ -178,14 +179,14 @@
   --font-size-lg: 1.25rem;
 
   /* Espaçamentos */
-  --space-xs: 0.25rem; /* 4px */
-  --space-sm: 0.5rem;  /* 8px */
-  --space-md: 1rem;    /* 16px */
-  --space-lg: 1.5rem;  /* 24px */
-  --space-xl: 2rem;    /* 32px */
-  --space-2xl: 3rem;   /* 48px */
-  --space-3xl: 4rem;   /* 64px */
-  --space-4xl: 5.5rem; /* 88px */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5.5rem;
 
   /* Raios de Borda */
   --radius-sm: 6px;
@@ -249,7 +250,8 @@
   --color-badge-text: #1e293b;
 
   /* Editor de Código no Claro */
-  --color-editor-shadow: rgba(0, 0, 0, 0.3);
+  --color-editor-shadow: rgba(0, 0, 0, 0.45);
+  --shadow-editor: 0 12px 30px rgba(0, 0, 0, 0.5);
 
   /* Card de Serviço em Destaque no Tema Claro */
   --color-card-featured-bg: var(--color-primary);
@@ -287,4 +289,11 @@
   --color-header-scrolled-nav-toggle-bg: rgba(0, 0, 0, 0.05);
   --color-header-scrolled-nav-toggle-border: rgba(0, 0, 0, 0.12);
   --color-header-scrolled-nav-toggle-bar: var(--color-text-primary);
+
+  /* Hero no Tema Claro */
+  --color-hero-bg: #0b0c12;
+  --color-hero-overlay-1: rgba(15, 16, 23, 0.78);
+  --color-hero-overlay-2: rgba(15, 16, 23, 0.62);
+  --color-hero-overlay-3: rgba(15, 16, 23, 0.84);
+  --color-hero-glow: transparent;
 }

@@ -172,7 +172,7 @@
   background-color: var(--color-editor-bg);
   border: 1px solid var(--color-editor-border);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg), 0 0 40px var(--color-editor-shadow);
+  box-shadow: var(--shadow-editor), 0 0 40px var(--color-editor-shadow);
   overflow: hidden;
   backdrop-filter: blur(12px);
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
@@ -180,7 +180,7 @@
 
 .hero__editor:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg), 0 0 50px var(--color-editor-glow);
+  box-shadow: var(--shadow-editor), 0 0 50px var(--color-editor-glow);
 }
 
 .hero__editor-header {
