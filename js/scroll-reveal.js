@@ -4,6 +4,8 @@
   const revealElements = document.querySelectorAll('[data-reveal]');
   if (!revealElements.length) return;
 
+  document.documentElement.classList.add('js-reveal-enabled');
+
   if (!('IntersectionObserver' in window)) {
     revealElements.forEach((el) => el.classList.add('is-revealed'));
     return;

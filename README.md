@@ -29,7 +29,7 @@ Aplicação web estática e responsiva no estilo landing page, desenvolvida como
 - Alternância de Tema (Dark/Light Mode): Suporte completo a temas claro e escuro com persistência e detecção automática da preferência do sistema operacional.
 - Rastreamento Ativo de Seções (Scroll Spy): Destaque dinâmico e preciso do link correspondente no cabeçalho conforme a rolagem do usuário, incluindo detecção inteligente de final de página para a seção de contato.
 - Animações ao Scroll Nativas (Scroll Reveal): Efeito de revelação gradual e escalonamento em cascata.
-- Navegação Responsiva: Menu principal otimizado para dispositivos móveis com drawer vertical deslizante e fechamento automático ao selecionar âncoras.
+- Navegação Responsiva: Menu principal otimizado para dispositivos móveis com drawer vertical deslizante, desenvolvido em CSS puro.
 - Tipografia e Espaçamentos: Uso de funções CSS, unidades relativas e dimensionamento adaptativo proporcional entre desktop e mobile.
 - Identidade Visual: Composição de layout com cards elevados, molduras com sobreposição calculada e badges de status com indicador visual.
 
@@ -56,7 +56,6 @@ As variáveis de design estão centralizadas em `css/base/variables.css`, defini
 O comportamento dinâmico é particionado em scripts com funções autoexecutáveis:
 - `header.js`: Gerenciamento do cabeçalho inteligente (ocultação/exibição na rolagem).
 - `theme.js`: Gerenciamento da alternância e persistência de temas.
-- `menu.js`: Controle de abertura, acessibilidade e navegação por teclado no menu mobile.
 - `smooth-scroll.js`: Rolagem suave programática e Scroll Spy que monitora os alvos da navegação.
 - `scroll-reveal.js`: Transições de entrada de elementos no viewport.
 - `footer.js`: Injeção dinâmica do ano vigente no rodapé.
@@ -90,7 +89,6 @@ O comportamento dinâmico é particionado em scripts com funções autoexecutáv
 ├── js/
 │   ├── footer.js
 │   ├── header.js
-│   ├── menu.js
 │   ├── scroll-reveal.js
 │   ├── smooth-scroll.js
 │   └── theme.js
