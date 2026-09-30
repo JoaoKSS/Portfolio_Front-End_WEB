@@ -50,8 +50,12 @@
       const target = document.getElementById(id);
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
+        history.pushState(null, '', '#' + id);
       }
       setActive(id);
+
+      const menuToggle = document.getElementById('menuToggle');
+      if (menuToggle) menuToggle.checked = false;
     });
   });
 
@@ -69,6 +73,31 @@
     { passive: true }
   );
 
+  // Navegação por histórico
+  window.addEventListener('popstate', () => {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const target = document.getElementById(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+        setActive(hash);
+        return;
+      }
+    }
+    setActive(getActiveId());
+  });
+
   // Estado inicial
-  window.addEventListener('load', () => setActive(getActiveId()));
+  window.addEventListener('load', () => {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const target = document.getElementById(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+        setActive(hash);
+        return;
+      }
+    }
+    setActive(getActiveId());
+  });
 })();

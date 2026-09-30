@@ -52,7 +52,7 @@
 }
 
 .footer__social-link:focus-visible {
-  outline: 2px solid var(--color-contact-tag);
+  outline: 2px solid var(--color-accent-on-dark);
   outline-offset: 2px;
 }
 

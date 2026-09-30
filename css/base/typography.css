@@ -43,14 +43,3 @@ pre {
 .text-highlight {
   color: var(--color-highlight);
 }
-
-/* Tag de identificação de seção */
-.section-tag {
-  display: inline-block;
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--color-highlight);
-}

@@ -153,7 +153,6 @@
 
   .process__step {
     padding-inline: clamp(1.25rem, 2vw, 2.25rem);
-    border-bottom: none !important;
   }
 
   .process__step:first-child {
@@ -165,6 +164,7 @@
   }
 
   .process__step:not(:last-child) {
+    border-bottom: none;
     border-right: 1px solid var(--color-border);
   }
 }

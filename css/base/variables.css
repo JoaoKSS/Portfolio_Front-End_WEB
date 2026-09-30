@@ -1,10 +1,9 @@
 /* Configuração da paleta de cores, tipografia, espaçamentos e raios */
 
 :root {
-  /* Superfícies e Fundos - Tema Escuro (Midnight Cobalt) */
+  /* Superfícies e Fundos no Tema Escuro */
   --color-bg-primary: #070b14;
   --color-bg-secondary: #0c1220;
-  --color-bg-tertiary: #111a2e;
   --color-bg-elevated: #16223d;
   --color-bg-glass: rgba(7, 11, 20, 0.85);
 
@@ -15,13 +14,11 @@
   --color-highlight: #60a5fa;
 
   /* Status */
-  --color-success: #10b981;
   --color-success-dot: #22c55e;
 
   /* Textos e Tipografia */
   --color-text-primary: #ffffff;
   --color-text-secondary: #94a3b8;
-  --color-text-muted: #64748b;
   --color-about-tag: #94a3b8;
   --color-text-on-dark: #ffffff;
   --color-text-on-dark-muted: #cbd5e1;
@@ -57,9 +54,6 @@
   --color-nav-link-hover: #ffffff;
   --color-nav-link-active: #60a5fa;
   --color-theme-toggle-bg: #ffffff;
-  --color-theme-toggle-color: #0f172a;
-  --color-theme-icon-sun: #f59e0b;
-  --color-theme-icon-moon: #2563eb;
   --color-nav-toggle-bg: rgba(255, 255, 255, 0.08);
   --color-nav-toggle-border: rgba(255, 255, 255, 0.15);
   --color-nav-toggle-bar: #ffffff;
@@ -175,7 +169,6 @@
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
-  --font-size-md: 1.125rem;
   --font-size-lg: 1.25rem;
 
   /* Espaçamentos */
@@ -219,20 +212,16 @@
   /* Superfícies & Fundos no Tema Claro */
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #f8fafc;
-  --color-bg-tertiary: #f1f5f9;
   --color-bg-elevated: #e2e8f0;
   --color-bg-glass: rgba(255, 255, 255, 0.88);
 
   /* Acentos Azul Cobalto no Fundo Claro */
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
   --color-primary-light: rgba(37, 99, 235, 0.08);
   --color-highlight: #2563eb;
 
   /* Textos - Alto Contraste no Claro */
   --color-text-primary: #0f172a;
   --color-text-secondary: #475569;
-  --color-text-muted: #64748b;
   --color-about-tag: #64748b;
 
   /* Bordas */
@@ -240,30 +229,14 @@
   --color-border-subtle: rgba(0, 0, 0, 0.04);
   --color-border-hover: rgba(37, 99, 235, 0.35);
 
-  /* Componentes: Cards, Pílulas e Badges no Claro */
+  /* Componentes: Cards e Pílulas no Claro */
   --color-card-bg: #ffffff;
   --color-card-border: #e2e8f0;
   --color-pill-bg: #f1f5f9;
   --color-pill-text: #475569;
-  --color-badge-bg: #ffffff;
-  --color-badge-border: #e2e8f0;
-  --color-badge-text: #1e293b;
-
-  /* Editor de Código no Claro */
-  --color-editor-shadow: rgba(0, 0, 0, 0.45);
-  --shadow-editor: 0 12px 30px rgba(0, 0, 0, 0.5);
 
   /* Card de Serviço em Destaque no Tema Claro */
-  --color-card-featured-bg: var(--color-primary);
   --color-card-featured-border: var(--color-primary);
-  --color-card-featured-title: #ffffff;
-  --color-card-featured-desc: rgba(255, 255, 255, 0.9);
-  --color-card-featured-link: #ffffff;
-  --color-card-featured-icon-bg: rgba(255, 255, 255, 0.2);
-  --color-card-featured-icon-hover-bg: rgba(255, 255, 255, 0.28);
-  --color-card-featured-icon-color: #ffffff;
-  --shadow-card-featured: 0 12px 28px -4px rgba(37, 99, 235, 0.35);
-  --shadow-card-featured-hover: 0 18px 36px -4px rgba(37, 99, 235, 0.5);
 
   /* Ícones dos Cards de Serviço no Tema Claro */
   --color-card-icon-bg: rgba(37, 99, 235, 0.08);
@@ -290,10 +263,8 @@
   --color-header-scrolled-nav-toggle-border: rgba(0, 0, 0, 0.12);
   --color-header-scrolled-nav-toggle-bar: var(--color-text-primary);
 
-  /* Hero no Tema Claro */
-  --color-hero-bg: #0b0c12;
+  /* Hero Overlays no Tema Claro */
   --color-hero-overlay-1: rgba(15, 16, 23, 0.78);
   --color-hero-overlay-2: rgba(15, 16, 23, 0.62);
   --color-hero-overlay-3: rgba(15, 16, 23, 0.84);
-  --color-hero-glow: transparent;
 }

@@ -69,12 +69,6 @@
   align-items: stretch;
 }
 
-@media (min-width: 992px) {
-  .portfolio__grid {
-    grid-template-columns: 1.18fr 0.82fr;
-  }
-}
-
 .portfolio__column-stacked {
   display: flex;
   flex-direction: column;
@@ -83,6 +77,10 @@
 }
 
 @media (min-width: 992px) {
+  .portfolio__grid {
+    grid-template-columns: 1.18fr 0.82fr;
+  }
+
   .portfolio__column-stacked .project-card {
     flex: 1;
   }

@@ -10,7 +10,7 @@
   <title>João Kennedy | Desenvolvedor Full Stack</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><rect width='32' height='32' rx='8' fill='%232563eb'/><path d='m20 21 5-5-5-5M12 11l-5 5 5 5M18 7l-4 18' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 
   <!-- Google Fonts Preconnect para otimização de performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,11 +65,25 @@
         <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar entre tema claro e escuro"
           aria-pressed="false">
           <!-- lua -->
-          <img src="assets/icons/moon.svg" width="20" height="20" class="theme-toggle__icon lucide-moon" alt=""
-            aria-hidden="true" draggable="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="theme-toggle__icon lucide-moon" aria-hidden="true">
+            <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
+          </svg>
           <!-- sol -->
-          <img src="assets/icons/sun.svg" width="20" height="20" class="theme-toggle__icon lucide-sun" alt=""
-            aria-hidden="true" draggable="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="theme-toggle__icon lucide-sun" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2"/>
+            <path d="M12 20v2"/>
+            <path d="m4.93 4.93 1.41 1.41"/>
+            <path d="m17.66 17.66 1.41 1.41"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="m6.34 17.66-1.41 1.41"/>
+            <path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
         </button>
 
         <!-- Botão Menu Mobile -->
@@ -90,6 +104,10 @@
 
     <!-- Seção Hero -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/images/hero-bg.webp" alt="" class="hero__bg-img" fetchpriority="high">
+        <div class="hero__bg-overlay"></div>
+      </div>
       <div class="container hero__container">
         <!-- Coluna da Esquerda - Informações e Chamada -->
         <div class="hero__content">
@@ -507,6 +525,10 @@
 
     <!-- Seção Contato -->
     <section class="contact" id="contato" aria-labelledby="contact-title">
+      <div class="contact__bg" aria-hidden="true">
+        <img src="assets/images/contact-bg.webp" alt="" class="contact__bg-img" loading="lazy">
+        <div class="contact__bg-overlay"></div>
+      </div>
       <div class="container contact__container">
         <!-- Conteúdo Textual -->
         <div class="contact__content" data-reveal>

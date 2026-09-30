@@ -16,7 +16,7 @@
     const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
 
     // Se o menu mobile estiver aberto mantém o header sempre visível
-    const isMenuOpen = menuToggle && menuToggle.getAttribute('aria-expanded') === 'true';
+    const isMenuOpen = menuToggle && (menuToggle.checked || menuToggle.getAttribute('aria-expanded') === 'true');
     if (isMenuOpen) {
       header.classList.remove('header--hidden');
       lastScrollY = currentScrollY;
